@@ -1,0 +1,42 @@
+﻿<Window x:Class="_202020.Information"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Icon="Media/InformationIcon.ico"
+        Title="202020 Info" Height="650" Width="400">
+    <Grid Background="{StaticResource BackgroundBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="10*"/>
+        </Grid.RowDefinitions>
+        <TextBox VerticalAlignment="Center" HorizontalAlignment="Center" IsReadOnly="True" FontSize="18" BorderBrush="{StaticResource ButtonBackground}" Padding="5" Text="Information"/>
+        <Border Grid.Row="1" BorderThickness="1" BorderBrush="{StaticResource ButtonBackground}" Margin="10 5 10 10">
+            <TextBlock Padding="5" Background="White" TextWrapping="Wrap" FontSize="14">
+                Q: What is the 20/20/20 rule?
+                <LineBreak/>
+                A: The 20/20/20 rule is an easy-to-follow, science-backed tip for keeping your eyes healthy while working at a computer. It's simple: every 20 minutes, look at something 20 feet away for 20 seconds.
+                <LineBreak/> <LineBreak/>
+                Q: Why should I use this app?
+                <LineBreak/>
+                A: 202020 is a 100% free, open-source program that makes the 20/20/20 rule even more convenient! 
+                You can adjust timers, notifications, colors, and more from the settings page. 
+                <LineBreak/><LineBreak/>
+                Q: Why can't I see the 202020 icon when it's running?
+                <LineBreak/>
+                A: If you have "Run in Taskbar" unchecked in settings (unchecked by default), 202020 runs in the tray. 
+                Move your cursor to the bottom right of your window, and when the taskbar pops up, click the '^' symbol. You should see 202020 running here.
+                It may also be next to the '^' symbol.
+                <LineBreak/><LineBreak/>
+                Q: Is there any way to leave feedback or ask questions?
+                <LineBreak/>
+                A: For sure! Feel free to email app.202020.2021@gmail.com. All feedback, positive and negative, is greatly appreciated. 
+                Suggestions and questions are more than welcome and I'll try to respond promptly if you have any.
+                <LineBreak/>
+                <LineBreak/>
+                Thanks for using 202020!
+            </TextBlock>
+        </Border>
+    </Grid>
+</Window>

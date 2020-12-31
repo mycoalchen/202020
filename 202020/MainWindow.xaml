@@ -1,0 +1,71 @@
+﻿<Window x:Class="_202020.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_202020"
+        mc:Ignorable="d"
+        ShowInTaskbar="False"
+        Icon="Media/MainWindow.ico"
+        Title="202020" Height="150" Width="250">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0" Margin="3 2 2 1" BorderBrush="{StaticResource BackgroundBrush}">
+            <Grid Background="{StaticResource ButtonBackground}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="4*"/>
+                    <ColumnDefinition Width="20*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="20*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="20*"/>
+                    <ColumnDefinition Width="4*"/>
+                </Grid.ColumnDefinitions>
+                <Border Grid.Column="1" BorderBrush="{x:Null}" Height="50" VerticalAlignment="Bottom">
+                    <TextBlock Name="HoursRemaining" Style="{StaticResource MainTimeText}"/>
+                </Border>
+                <Border Grid.Column="2" BorderBrush="{x:Null}" Height="50" VerticalAlignment="Center">
+                    <TextBlock Name="Colon1" Grid.Column="2" Style="{StaticResource MainTimeText}" Text=":"/>
+                </Border>
+                <Border Grid.Column="3" BorderBrush="{x:Null}" Height="50" VerticalAlignment="Bottom">
+                    <TextBlock Name="MinutesRemaining" Style="{StaticResource MainTimeText}"/>
+                </Border>
+                <Border Grid.Column="4" BorderBrush="{x:Null}" Height="50" VerticalAlignment="Center">
+                    <TextBlock Name="Colon2" Grid.Column="2" Style="{StaticResource MainTimeText}" Text=":"/>
+                </Border>
+                <Border Grid.Column="5" BorderBrush="{x:Null}" Height="50" VerticalAlignment="Bottom">
+                    <TextBlock Name="SecondsRemaining" Style="{StaticResource MainTimeText}"/>
+                </Border>
+            </Grid>
+        </Border>
+        <Border Grid.Row="1" BorderThickness="2 1 2 2" BorderBrush="{StaticResource BackgroundBrush}">
+            <Grid Background="{StaticResource BackgroundBrush}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" Name="Settings" Click="Settings_Click" Background="{StaticResource ButtonBackground}" BorderBrush="White"
+                Height="{Binding ActualWidth, RelativeSource={RelativeSource Self}}">
+                    <Image Source="Media\Settings.png"></Image>
+                </Button>
+                <Button Grid.Column="1" Name="PlayPause" Click="PlayPause_Click" Background="{StaticResource ButtonBackground}" BorderBrush="White"
+                Height="{Binding ActualWidth, RelativeSource={RelativeSource Self}}">
+                    <Image Name="PlayPauseImage" Source="Media\Pause.png"></Image>
+                </Button>
+                <Button Grid.Column="2" Name="FastForward" Click="FastForward_Click" Background="{StaticResource ButtonBackground}" BorderBrush="White"
+                Height="{Binding ActualWidth, RelativeSource={RelativeSource Self}}">
+                    <Image Source="Media\Fast Forward.png"></Image>
+                </Button>
+                <Button Grid.Column="3" Name="Feedback" Click="Information_Click" Background="{StaticResource ButtonBackground}" BorderBrush="White"
+                Height="{Binding ActualWidth, RelativeSource={RelativeSource Self}}">
+                    <Image Source="Media\Information.png" Height="40"></Image>
+                </Button>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

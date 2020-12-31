@@ -1,0 +1,30 @@
+﻿<Application x:Class="_202020.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:_202020"
+             StartupUri="MainWindow.xaml"
+             Startup="Application_Startup"
+             xmlns:properties="clr-namespace:_202020.Properties"
+             Exit="Application_Exit">
+    <Application.Resources>
+        <Brush x:Key="BackgroundBrush">#d7e7f6ff</Brush>
+        <Brush x:Key="ButtonBackground">#FFA0C9ED</Brush>
+        <Style x:Key="SettingsText" TargetType="TextBlock">
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="FontFamily" Value="Segoe UI" />
+            <Setter Property="Foreground" Value="Black" />
+            <Setter Property="Cursor" Value="IBeam" />
+            <Setter Property="Background" Value="White"/>
+        </Style>
+        <properties:Settings x:Key="Settings"/>
+        <Style x:Key="MainTimeText" TargetType="TextBlock">
+            <Setter Property="Margin" Value="0 0 0 0" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="FontSize" Value="55" />
+            <Setter Property="FontFamily" Value="Nimbus Mono L" />
+        </Style>
+    </Application.Resources>
+</Application>
