@@ -8,7 +8,7 @@
         ResizeMode="CanMinimize"
         SizeToContent="Height"
         Icon="Media/Notification.ico"
-        Title="202020 Break" Height="150" Width="200">
+        Title="202020 Break" Height="150" Width="250">
     <Grid Background="Black">
         <TextBlock Name="NotifMessage" 
                    TextWrapping="Wrap" 

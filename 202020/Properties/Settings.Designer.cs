@@ -8,277 +8,288 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace _202020.Properties
-{
-
-
+namespace _202020.Properties {
+    
+    
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.7.0.0")]
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase
-    {
-
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
-
-        public static Settings Default
-        {
-            get
-            {
+        
+        public static Settings Default {
+            get {
                 return defaultInstance;
             }
         }
-
+        
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool NotificationsEnabled
-        {
-            get
-            {
+        public global::System.Drawing.Color ThemeColor1 {
+            get {
+                return ((global::System.Drawing.Color)(this["ThemeColor1"]));
+            }
+            set {
+                this["ThemeColor1"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::System.Drawing.Color ThemeColor2 {
+            get {
+                return ((global::System.Drawing.Color)(this["ThemeColor2"]));
+            }
+            set {
+                this["ThemeColor2"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::System.Drawing.Color ClockText1 {
+            get {
+                return ((global::System.Drawing.Color)(this["ClockText1"]));
+            }
+            set {
+                this["ClockText1"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::System.Drawing.Color ClockText2 {
+            get {
+                return ((global::System.Drawing.Color)(this["ClockText2"]));
+            }
+            set {
+                this["ClockText2"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::System.Drawing.Color NotificationTextColor {
+            get {
+                return ((global::System.Drawing.Color)(this["NotificationTextColor"]));
+            }
+            set {
+                this["NotificationTextColor"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::System.Drawing.Color NotificationBackground {
+            get {
+                return ((global::System.Drawing.Color)(this["NotificationBackground"]));
+            }
+            set {
+                this["NotificationBackground"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool NotificationsEnabled {
+            get {
                 return ((bool)(this["NotificationsEnabled"]));
             }
-            set
-            {
+            set {
                 this["NotificationsEnabled"] = value;
             }
         }
-
+        
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool NotificationStartSound
-        {
-            get
-            {
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool NotificationStartSound {
+            get {
                 return ((bool)(this["NotificationStartSound"]));
             }
-            set
-            {
+            set {
                 this["NotificationStartSound"] = value;
             }
         }
-
+        
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool NotificationStopSound
-        {
-            get
-            {
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool NotificationStopSound {
+            get {
                 return ((bool)(this["NotificationStopSound"]));
             }
-            set
-            {
+            set {
                 this["NotificationStopSound"] = value;
             }
         }
-
+        
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Look at something 20 feet away for 20 seconds!")]
-        public string NotificationText
-        {
-            get
-            {
-                return ((string)(this["NotificationText"]));
-            }
-            set
-            {
-                this["NotificationText"] = value;
-            }
-        }
-
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool NotificationTextEnabled
-        {
-            get
-            {
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool NotificationTextEnabled {
+            get {
                 return ((bool)(this["NotificationTextEnabled"]));
             }
-            set
-            {
+            set {
                 this["NotificationTextEnabled"] = value;
             }
         }
-
+        
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool RunInTaskbar
-        {
-            get
-            {
-                return ((bool)(this["RunInTaskbar"]));
+        [global::System.Configuration.DefaultSettingValueAttribute("Look at something 20 feet away for 20 seconds!")]
+        public string NotificationText {
+            get {
+                return ((string)(this["NotificationText"]));
             }
-            set
-            {
-                this["RunInTaskbar"] = value;
+            set {
+                this["NotificationText"] = value;
             }
         }
-
+        
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int TBBhours
-        {
-            get
-            {
+        public int TBBhours {
+            get {
                 return ((int)(this["TBBhours"]));
             }
-            set
-            {
+            set {
                 this["TBBhours"] = value;
             }
         }
-
+        
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("20")]
-        public int TBBminutes
-        {
-            get
-            {
+        public int TBBminutes {
+            get {
                 return ((int)(this["TBBminutes"]));
             }
-            set
-            {
+            set {
                 this["TBBminutes"] = value;
             }
         }
-
+        
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int TBBseconds
-        {
-            get
-            {
+        public int TBBseconds {
+            get {
                 return ((int)(this["TBBseconds"]));
             }
-            set
-            {
+            set {
                 this["TBBseconds"] = value;
             }
         }
-
+        
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int BLhours
-        {
-            get
-            {
+        public int BLhours {
+            get {
                 return ((int)(this["BLhours"]));
             }
-            set
-            {
+            set {
                 this["BLhours"] = value;
             }
         }
-
+        
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int BLminutes
-        {
-            get
-            {
+        public int BLminutes {
+            get {
                 return ((int)(this["BLminutes"]));
             }
-            set
-            {
+            set {
                 this["BLminutes"] = value;
             }
         }
-
+        
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("20")]
-        public int BLseconds
-        {
-            get
-            {
+        public int BLseconds {
+            get {
                 return ((int)(this["BLseconds"]));
             }
-            set
-            {
+            set {
                 this["BLseconds"] = value;
             }
         }
-
+        
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool PlayPauseShortcut
-        {
-            get
-            {
+        public bool PlayPauseShortcut {
+            get {
                 return ((bool)(this["PlayPauseShortcut"]));
             }
-            set
-            {
+            set {
                 this["PlayPauseShortcut"] = value;
             }
         }
-
+        
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool FastForwardShortcut
-        {
-            get
-            {
+        public bool FastForwardShortcut {
+            get {
                 return ((bool)(this["FastForwardShortcut"]));
             }
-            set
-            {
+            set {
                 this["FastForwardShortcut"] = value;
             }
         }
-
+        
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("50")]
-        public int StartVolume
-        {
-            get
-            {
+        public int StartVolume {
+            get {
                 return ((int)(this["StartVolume"]));
             }
-            set
-            {
+            set {
                 this["StartVolume"] = value;
             }
         }
-
+        
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("50")]
-        public int StopVolume
-        {
-            get
-            {
+        public int StopVolume {
+            get {
                 return ((int)(this["StopVolume"]));
             }
-            set
-            {
+            set {
                 this["StopVolume"] = value;
             }
         }
-
+        
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool ShowInAltTab
-        {
-            get
-            {
+        public bool ShowInAltTab {
+            get {
                 return ((bool)(this["ShowInAltTab"]));
             }
-            set
-            {
+            set {
                 this["ShowInAltTab"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool RunInTaskbar {
+            get {
+                return ((bool)(this["RunInTaskbar"]));
+            }
+            set {
+                this["RunInTaskbar"] = value;
             }
         }
     }
