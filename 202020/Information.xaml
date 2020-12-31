@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
         Icon="Media/InformationIcon.ico"
-        Title="202020 Info" Height="650" Width="400">
+        Title="202020 Info" Height="660" Width="400">
     <Grid Background="{StaticResource BackgroundBrush}">
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"/>
@@ -21,7 +21,8 @@
                 Q: Why should I use this app?
                 <LineBreak/>
                 A: 202020 is a 100% free, open-source program that makes the 20/20/20 rule even more convenient! 
-                You can adjust timers, notifications, colors, and more from the settings page. 
+                You can adjust timers, notifications, and more from the settings page. 
+                Plus, with keyboard shortcuts, you don't even need to open the 202020 window!
                 <LineBreak/><LineBreak/>
                 Q: Why can't I see the 202020 icon when it's running?
                 <LineBreak/>

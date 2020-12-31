@@ -9,7 +9,7 @@
         ResizeMode="CanMinimize"
         ShowInTaskbar="True"
         Icon="Media/SettingsIcon.ico"
-        Title="Settings" Height="640" Width="300">
+        Title="Settings" Height="660" Width="300">
     <Window.Resources>
         <local:TwoDigit x:Key="TwoDigit"/>
     </Window.Resources>
@@ -21,7 +21,7 @@
             <RowDefinition Height="8*"/>
             <RowDefinition Height="52*"/>
             <RowDefinition Height="8*"/>
-            <RowDefinition Height="78*"/>
+            <RowDefinition Height="86*"/>
             <RowDefinition Height="8*"/>
             <RowDefinition Height="40*"/>
             <RowDefinition Height="8*"/>
@@ -115,10 +115,10 @@
         <Border Grid.Row="6" Margin="10 1.5 10 1.5" BorderBrush="{StaticResource ButtonBackground}" BorderThickness="1">
             <Grid Background="White">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="1.4*"/>
+                    <RowDefinition Height="1.6*"/>
                     <RowDefinition Height="1.4*"/>
                     <RowDefinition Height="3*"/>
-                    <RowDefinition Height="3*"/>
+                    <RowDefinition Height="5.2*"/>
                 </Grid.RowDefinitions>
                 <TextBlock Grid.Row="0" Style="{StaticResource SettingsText}" Text="Notifications" Margin="10 0 0 0"/>
                 <CheckBox Grid.Row="1" Margin="4 0 4 0" BorderBrush="Black" VerticalContentAlignment="Center" Name="NotificationsEnabled"
@@ -154,7 +154,7 @@
                 </Grid>
                 <StackPanel Grid.Row="3">
                     <CheckBox Margin="4 4 4 0" Name="NotificationTextEnabled" BorderBrush="Black" VerticalContentAlignment="Center"
-                              ToolTip="Small notification window that takes focus over current window"
+                              ToolTip="Small notification window that opens and closes when breaks start and stop"
                               IsChecked="{Binding Source={x:Static properties:Settings.Default}, Path=NotificationTextEnabled}">
                         <TextBlock TextWrapping="Wrap" TextAlignment="Left" FontSize="13">Notification window</TextBlock>
                     </CheckBox>
@@ -162,6 +162,11 @@
                              ToolTip="Text that will show on the notification window"
                              IsEnabled="{Binding ElementName=NotificationTextEnabled, Path=IsChecked}"
                              Text="{Binding Source={x:Static properties:Settings.Default}, Path=NotificationText}"/>
+                    <CheckBox Margin="4 2 4 0" Name="NotificationFocused" BorderBrush="Black" VerticalContentAlignment="Center"
+                              ToolTip="Whether to give the notification window focus over current window"
+                              IsChecked="{Binding Source={x:Static properties:Settings.Default}, Path=NotificationFocused}">
+                        <TextBlock TextWrapping="Wrap" TextAlignment="Left" FontSize="13">Give notification window focus</TextBlock>
+                    </CheckBox>
                 </StackPanel>
             </Grid>
         </Border>

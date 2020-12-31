@@ -232,7 +232,8 @@ namespace _202020
             if (ShowNotification && Properties.Settings.Default.NotificationTextEnabled == true)
             {
                 var NotifWin = new BreakNotification();
-                NotifWin.Show(); NotifWin.Activate();
+                NotifWin.Show(); 
+                if (Properties.Settings.Default.NotificationFocused) { NotifWin.Activate(); }
             }
             OnBreak = true;
         }

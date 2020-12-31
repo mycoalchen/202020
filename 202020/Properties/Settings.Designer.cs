@@ -25,72 +25,6 @@ namespace _202020.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public global::System.Drawing.Color ThemeColor1 {
-            get {
-                return ((global::System.Drawing.Color)(this["ThemeColor1"]));
-            }
-            set {
-                this["ThemeColor1"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public global::System.Drawing.Color ThemeColor2 {
-            get {
-                return ((global::System.Drawing.Color)(this["ThemeColor2"]));
-            }
-            set {
-                this["ThemeColor2"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public global::System.Drawing.Color ClockText1 {
-            get {
-                return ((global::System.Drawing.Color)(this["ClockText1"]));
-            }
-            set {
-                this["ClockText1"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public global::System.Drawing.Color ClockText2 {
-            get {
-                return ((global::System.Drawing.Color)(this["ClockText2"]));
-            }
-            set {
-                this["ClockText2"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public global::System.Drawing.Color NotificationTextColor {
-            get {
-                return ((global::System.Drawing.Color)(this["NotificationTextColor"]));
-            }
-            set {
-                this["NotificationTextColor"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public global::System.Drawing.Color NotificationBackground {
-            get {
-                return ((global::System.Drawing.Color)(this["NotificationBackground"]));
-            }
-            set {
-                this["NotificationBackground"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("False")]
         public bool NotificationsEnabled {
             get {
@@ -290,6 +224,18 @@ namespace _202020.Properties {
             }
             set {
                 this["RunInTaskbar"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool NotificationFocused {
+            get {
+                return ((bool)(this["NotificationFocused"]));
+            }
+            set {
+                this["NotificationFocused"] = value;
             }
         }
     }

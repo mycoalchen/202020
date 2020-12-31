@@ -2,24 +2,6 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="_202020.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
-    <Setting Name="ThemeColor1" Type="System.Drawing.Color" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="ThemeColor2" Type="System.Drawing.Color" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="ClockText1" Type="System.Drawing.Color" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="ClockText2" Type="System.Drawing.Color" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="NotificationTextColor" Type="System.Drawing.Color" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="NotificationBackground" Type="System.Drawing.Color" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
     <Setting Name="NotificationsEnabled" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
@@ -70,6 +52,9 @@
     </Setting>
     <Setting Name="RunInTaskbar" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="NotificationFocused" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
     </Setting>
   </Settings>
 </SettingsFile>
