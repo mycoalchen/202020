@@ -183,8 +183,7 @@
                     IsChecked="{Binding Source={x:Static properties:Settings.Default}, Path=PlayPauseShortcut}">
                     <TextBlock TextAlignment="Left" FontSize="13" Text="Pause/Resume (Win + Left Alt + Space)"/>
                 </CheckBox>
-                <Grid Grid.Row="2" ToolTip="Whether to play a sound when the pause/resume shortcut is pressed
-                      (The sound is higher-pitched so that you can tell the difference)">
+                <Grid Grid.Row="2" ToolTip="Whether to play a sound when the pause/resume shortcut is pressed (The sound is higher-pitched so that you can tell the difference)">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="0.5*"/>
                         <ColumnDefinition Width="3.5*"/>
@@ -196,8 +195,9 @@
                               Name="PlayPauseSoundEnabled">
                         <TextBlock>Play sound</TextBlock>
                     </CheckBox>
-                    <TextBlock Grid.Column="2" HorizontalAlignment="Right" Text="Volume (1-100):"/>
-                    <TextBox Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Width="28" Height="18"
+                    <TextBlock Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center" Text="Volume (1-100):"/>
+                    <TextBox Grid.Column="3" HorizontalAlignment="Center" VerticalContentAlignment="Center" 
+                             VerticalAlignment="Center" Width="28" Height="18" Margin="0 2 0 0"
                              Text="{Binding Source={x:Static properties:Settings.Default}, Path=PlayPauseVolume}" Name="PauseResumeVolume"/>
                 </Grid>
                 <CheckBox Grid.Row="3" Margin="4 0 0 0" BorderBrush="Black" VerticalContentAlignment="Center" Name="FastFowardShortcut"
