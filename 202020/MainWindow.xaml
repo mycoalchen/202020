@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:_202020"
         mc:Ignorable="d"
         ShowInTaskbar="False"
+        ResizeMode="CanMinimize"
         Icon="Media/MainWindow.ico"
         Title="202020" Height="150" Width="250">
     <Grid>
@@ -15,6 +16,9 @@
         </Grid.RowDefinitions>
         <Border Grid.Row="0" Margin="3 2 2 1" BorderBrush="{StaticResource BackgroundBrush}">
             <Grid Background="{StaticResource ButtonBackground}">
+                <Grid.ToolTip>
+                    <TextBlock Name="MainTimeToolTip"/>
+                </Grid.ToolTip>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="4*"/>
                     <ColumnDefinition Width="20*"/>

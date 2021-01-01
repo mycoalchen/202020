@@ -208,7 +208,7 @@
             </Grid>
         </Border>
         <Border Grid.Row="10" Margin="10 1.5 10 1.5" BorderBrush="{StaticResource ButtonBackground}" BorderThickness="1">
-            <Grid Background="White" ToolTip="Run settings will only be applied after restarting the app">
+            <Grid Background="White" ToolTip="Run settings will only be applied after restarting the app and minimizing it">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>

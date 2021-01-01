@@ -121,6 +121,7 @@ namespace _202020
         public MainWindow()
         {
             InitializeComponent();
+            MainTimeToolTip.Text = "Time until next break";
 
             if (!Properties.Settings.Default.RunInTaskbar)
             {
@@ -143,6 +144,7 @@ namespace _202020
             {
                 ShowInTaskbar = true;
             }
+
 
             TimeRemaining = new TimeSpan(Properties.Settings.Default.TBBhours,
                 Properties.Settings.Default.TBBminutes,
@@ -245,6 +247,7 @@ namespace _202020
                 NotifWin.Show(); 
                 if (Properties.Settings.Default.NotificationFocused) { NotifWin.Activate(); }
             }
+            MainTimeToolTip.Text = "Time until break ends";
             OnBreak = true;
         }
         public void EndBreak()
@@ -264,6 +267,7 @@ namespace _202020
             {
                 NotifWin.Close();
             }
+            MainTimeToolTip.Text = "Time until next break";
             OnBreak = false;
         }
         protected override void OnClosing(CancelEventArgs e)
