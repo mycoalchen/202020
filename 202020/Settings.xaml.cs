@@ -103,6 +103,7 @@ namespace _202020
             if (!int.TryParse(PauseResumeVolume.Text, out _PlayPauseVolume) || _PlayPauseVolume < 1 || _PlayPauseVolume > 100)
             {
                 MessageBox.Show("Invalid pause/resume volume- must be between 1 and 100");
+                return;
             }
             Properties.Settings.Default.StartVolume = _StartVolume;
             Properties.Settings.Default.StopVolume = _StopVolume;
