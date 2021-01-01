@@ -18,6 +18,8 @@ namespace _202020
         DispatcherTimer countdown;
         bool OnBreak = false;
         MediaPlayer Notif;
+        MediaPlayer PlayPauseNotif;
+        BreakNotification NotifWin;
 
         Window w; // helper window used to hide from alt-tab menu
 
@@ -46,6 +48,12 @@ namespace _202020
                         case PLAYPAUSE_ID: // Play/Pause
                             if (Properties.Settings.Default.PlayPauseShortcut)
                             {
+                                if ((bool)Properties.Settings.Default.PlayPauseSound)
+                                {
+                                    PlayPauseNotif.Volume = 0.005 * Properties.Settings.Default.PlayPauseVolume;
+                                    PlayPauseNotif.Position = TimeSpan.FromSeconds(0);
+                                    PlayPauseNotif.Play();
+                                }
                                 if (countdown.IsEnabled)
                                 {
                                     countdown.IsEnabled = false;
@@ -142,6 +150,8 @@ namespace _202020
 
             Notif = new MediaPlayer();
             Notif.Open(new Uri(@"../../Media/Doot.wav", UriKind.Relative));
+            PlayPauseNotif = new MediaPlayer();
+            PlayPauseNotif.Open(new Uri(@"../../Media/DootWavHigh.wav", UriKind.Relative));
 
             countdown = new DispatcherTimer(DispatcherPriority.Normal);
             countdown.Tick += OnTick;
@@ -231,7 +241,7 @@ namespace _202020
 
             if (ShowNotification && Properties.Settings.Default.NotificationTextEnabled == true)
             {
-                var NotifWin = new BreakNotification();
+                NotifWin = new BreakNotification();
                 NotifWin.Show(); 
                 if (Properties.Settings.Default.NotificationFocused) { NotifWin.Activate(); }
             }
@@ -250,10 +260,9 @@ namespace _202020
             Colon1.Foreground = System.Windows.Media.Brushes.White;
             Colon2.Foreground = System.Windows.Media.Brushes.White;
 
-            foreach (Window window in System.Windows.Application.Current.Windows)
+            if (NotifWin != null)
             {
-                if (window.GetType() == typeof(BreakNotification))
-                { window.Close(); }
+                NotifWin.Close();
             }
             OnBreak = false;
         }
@@ -262,6 +271,10 @@ namespace _202020
             if (w != null)
             {
                 w.Close();
+            }
+            if (NotifWin != null)
+            {
+                NotifWin.Close();
             }
             base.OnClosing(e);
         }

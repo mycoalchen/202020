@@ -89,7 +89,7 @@ namespace _202020
             Properties.Settings.Default.NotificationStopSound = (bool)StopSound.IsChecked;
             Properties.Settings.Default.NotificationTextEnabled = (bool)NotificationTextEnabled.IsChecked;
             Properties.Settings.Default.NotificationText = NotificationTextMessage.Text;
-            int _StartVolume, _StopVolume;
+            int _StartVolume, _StopVolume, _PlayPauseVolume;
             if (!int.TryParse(StartVolume.Text, out _StartVolume) || _StartVolume < 1 || _StartVolume > 100)
             {
                 MessageBox.Show("Invalid start volume- must be between 1 and 100");
@@ -100,8 +100,14 @@ namespace _202020
                 MessageBox.Show("Invalid stop volume- must be between 1 and 100");
                 return;
             }
+            if (!int.TryParse(PauseResumeVolume.Text, out _PlayPauseVolume) || _PlayPauseVolume < 1 || _PlayPauseVolume > 100)
+            {
+                MessageBox.Show("Invalid pause/resume volume- must be between 1 and 100");
+            }
             Properties.Settings.Default.StartVolume = _StartVolume;
             Properties.Settings.Default.StopVolume = _StopVolume;
+            Properties.Settings.Default.PlayPauseVolume = _PlayPauseVolume;
+            Properties.Settings.Default.PlayPauseSound = (bool)PlayPauseSoundEnabled.IsChecked;
 
             // Run in taskbar
             Properties.Settings.Default.RunInTaskbar = (bool)RunInTaskbar.IsChecked;
@@ -133,6 +139,11 @@ namespace _202020
         {
             Application.Current.Properties["SettingsOpen"] = false;
             base.OnClosing(e);
+        }
+
+        private void RunInTaskbar_Click(object sender, RoutedEventArgs e)
+        {
+            ShowInAltTab.IsChecked = (bool)RunInTaskbar.IsChecked ? true : ShowInAltTab.IsChecked;
         }
     }
 }

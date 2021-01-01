@@ -9,7 +9,7 @@
         ResizeMode="CanMinimize"
         ShowInTaskbar="True"
         Icon="Media/SettingsIcon.ico"
-        Title="Settings" Height="660" Width="300">
+        Title="Settings" Height="700" Width="300">
     <Window.Resources>
         <local:TwoDigit x:Key="TwoDigit"/>
     </Window.Resources>
@@ -23,7 +23,7 @@
             <RowDefinition Height="8*"/>
             <RowDefinition Height="86*"/>
             <RowDefinition Height="8*"/>
-            <RowDefinition Height="40*"/>
+            <RowDefinition Height="50*"/>
             <RowDefinition Height="8*"/>
             <RowDefinition Height="40*"/>
             <RowDefinition Height="8*"/>
@@ -176,13 +176,31 @@
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
                 <TextBlock Grid.Row="0" Style="{StaticResource SettingsText}" Text="Keyboard Shortcuts" Margin="10 0 0 0"/>
                 <CheckBox Grid.Row="1" Margin="4 0 0 0" BorderBrush="Black" VerticalContentAlignment="Center" Name="PlayPauseShortcut"
                     IsChecked="{Binding Source={x:Static properties:Settings.Default}, Path=PlayPauseShortcut}">
-                    <TextBlock TextAlignment="Left" FontSize="13" Text="Play/Pause (Win + Left Alt + Space)"/>
+                    <TextBlock TextAlignment="Left" FontSize="13" Text="Pause/Resume (Win + Left Alt + Space)"/>
                 </CheckBox>
-                <CheckBox Grid.Row="2" Margin="4 0 0 0" BorderBrush="Black" VerticalContentAlignment="Center" Name="FastFowardShortcut"
+                <Grid Grid.Row="2" ToolTip="Whether to play a sound when the pause/resume shortcut is pressed
+                      (The sound is higher-pitched so that you can tell the difference)">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.5*"/>
+                        <ColumnDefinition Width="3.5*"/>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="1.5*"/>
+                    </Grid.ColumnDefinitions>
+                    <CheckBox Grid.Column="1" BorderBrush="Black" Margin="4 0 0 0" VerticalAlignment="Center" VerticalContentAlignment="Center"
+                              IsChecked="{Binding Source={x:Static properties:Settings.Default}, Path=PlayPauseSound}"
+                              Name="PlayPauseSoundEnabled">
+                        <TextBlock>Play sound</TextBlock>
+                    </CheckBox>
+                    <TextBlock Grid.Column="2" HorizontalAlignment="Right" Text="Volume (1-100):"/>
+                    <TextBox Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Width="28" Height="18"
+                             Text="{Binding Source={x:Static properties:Settings.Default}, Path=PlayPauseVolume}" Name="PauseResumeVolume"/>
+                </Grid>
+                <CheckBox Grid.Row="3" Margin="4 0 0 0" BorderBrush="Black" VerticalContentAlignment="Center" Name="FastFowardShortcut"
                           ToolTip="If sounds are enabled, they will play after Fast Forward keyboard shortcut"
                             IsChecked="{Binding Source={x:Static properties:Settings.Default}, Path=FastForwardShortcut}">
                     <TextBlock TextAlignment="Left" FontSize="13" Text="Fast forward (Win + Left Alt + Right Arrow)"/>
@@ -199,7 +217,7 @@
                 <TextBlock Grid.Row="0" Margin="10 0 0 0" Style="{StaticResource SettingsText}" Text="Run Settings"/>
                 <CheckBox Grid.Row="2"
                         Margin="4 0 0 0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="13" VerticalContentAlignment="Center" Name="RunInTaskbar"
-                        IsChecked="{Binding Source={x:Static properties:Settings.Default}, Path=RunInTaskbar}">
+                        Click="RunInTaskbar_Click" IsChecked="{Binding Source={x:Static properties:Settings.Default}, Path=RunInTaskbar}">
                     Run in taskbar
                 </CheckBox>
                 <CheckBox Grid.Row="1"
