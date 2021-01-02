@@ -132,9 +132,12 @@ namespace _202020
             NotificationTextMessage.Text = "Look at something 20 feet away for 20 seconds!";
             StartSound.IsChecked = true;
             StopSound.IsChecked = true;
+            ShowInAltTab.IsChecked = true;
             RunInTaskbar.IsChecked = false;
             StartVolume.Text = "50";
             StopVolume.Text = "50";
+            PlayPauseSoundEnabled.IsChecked = true;
+            PauseResumeVolume.Text = "50";
         }
         protected override void OnClosing(CancelEventArgs e)
         {
