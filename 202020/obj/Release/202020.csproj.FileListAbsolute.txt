@@ -21,3 +21,4 @@ C:\Users\Michael\source\repos\202020\202020\obj\Release\202020.csproj.GenerateRe
 C:\Users\Michael\source\repos\202020\202020\obj\Release\202020.csproj.CoreCompileInputs.cache
 C:\Users\Michael\source\repos\202020\202020\obj\Release\202020.exe
 C:\Users\Michael\source\repos\202020\202020\obj\Release\202020.pdb
+C:\Users\Michael\source\repos\202020\202020\obj\Release\202020.csprojAssemblyReference.cache

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppInstaller
+	Uri="file:///C:/Users/Michael/202020Wap.appinstaller"
+	Version="1.0.1.0" xmlns="http://schemas.microsoft.com/appx/appinstaller/2017/2">
+	<MainBundle
+		Name="202020"
+		Version="1.0.1.0"
+		Publisher="CN=Michael Chen"
+		Uri="file:///C:/Users/Michael/202020Wap_1.0.1.0_Test/202020Wap_1.0.1.0_AnyCPU.appxbundle" />
+	<UpdateSettings>
+		<OnLaunch
+			HoursBetweenUpdateChecks="0" />
+	</UpdateSettings>
+</AppInstaller>

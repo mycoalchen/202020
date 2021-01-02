@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "202020", "202020\202020.csproj", "{E519E57C-45E0-4A3B-8884-6C1F07A932C7}"
 EndProject
-Project("{C7167F0D-BC9F-4E6E-AFE1-012C56B48DB5}") = "202020Wap", "202020Wap\202020Wap.wapproj", "{D3FB1E09-6D68-4FFF-8928-5D9A47636C99}"
+Project("{C7167F0D-BC9F-4E6E-AFE1-012C56B48DB5}") = "202020 Installer", "202020Wap\202020 Installer.wapproj", "{D3FB1E09-6D68-4FFF-8928-5D9A47636C99}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
