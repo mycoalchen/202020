@@ -52,7 +52,7 @@
   <PropertyGroup>
     <ProjectGuid>d3fb1e09-6d68-4fff-8928-5d9a47636c99</ProjectGuid>
     <TargetPlatformVersion>10.0.18362.0</TargetPlatformVersion>
-    <TargetPlatformMinVersion>10.0.14393.0</TargetPlatformMinVersion>
+    <TargetPlatformMinVersion>10.0.17134.0</TargetPlatformMinVersion>
     <DefaultLanguage>en-US</DefaultLanguage>
     <AppxPackageSigningEnabled>false</AppxPackageSigningEnabled>
     <EntryPointProjectUniqueName>..\202020\202020.csproj</EntryPointProjectUniqueName>

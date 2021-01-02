@@ -1,7 +1,6 @@
 C:\Users\Michael\source\repos\202020\202020\bin\Release\202020.exe.config
 C:\Users\Michael\source\repos\202020\202020\bin\Release\202020.exe
 C:\Users\Michael\source\repos\202020\202020\bin\Release\202020.pdb
-C:\Users\Michael\source\repos\202020\202020\obj\Release\202020.csprojAssemblyReference.cache
 C:\Users\Michael\source\repos\202020\202020\obj\Release\Information.baml
 C:\Users\Michael\source\repos\202020\202020\obj\Release\BreakNotification.g.cs
 C:\Users\Michael\source\repos\202020\202020\obj\Release\Information.g.cs
