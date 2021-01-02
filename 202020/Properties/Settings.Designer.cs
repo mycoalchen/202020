@@ -25,7 +25,7 @@ namespace _202020.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
         public bool NotificationsEnabled {
             get {
                 return ((bool)(this["NotificationsEnabled"]));
@@ -37,7 +37,7 @@ namespace _202020.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
         public bool NotificationStartSound {
             get {
                 return ((bool)(this["NotificationStartSound"]));
@@ -49,7 +49,7 @@ namespace _202020.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
         public bool NotificationStopSound {
             get {
                 return ((bool)(this["NotificationStopSound"]));
@@ -61,7 +61,7 @@ namespace _202020.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
         public bool NotificationTextEnabled {
             get {
                 return ((bool)(this["NotificationTextEnabled"]));
@@ -205,7 +205,7 @@ namespace _202020.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
         public bool ShowInAltTab {
             get {
                 return ((bool)(this["ShowInAltTab"]));

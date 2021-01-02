@@ -3,16 +3,16 @@
   <Profiles />
   <Settings>
     <Setting Name="NotificationsEnabled" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
+      <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="NotificationStartSound" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
+      <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="NotificationStopSound" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
+      <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="NotificationTextEnabled" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
+      <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="NotificationText" Type="System.String" Scope="User">
       <Value Profile="(Default)">Look at something 20 feet away for 20 seconds!</Value>
@@ -48,7 +48,7 @@
       <Value Profile="(Default)">50</Value>
     </Setting>
     <Setting Name="ShowInAltTab" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
+      <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="RunInTaskbar" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
