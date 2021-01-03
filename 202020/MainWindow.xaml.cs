@@ -23,7 +23,7 @@ namespace _202020
 
         Window w; // helper window used to hide from alt-tab menu
 
-        // Hotkey stuff
+        #region Hotkey stuff
         [DllImport("user32.dll")]
         public static extern bool RegisterHotKey(IntPtr hWnd, int id, uint fsModifiers, uint vk);
         [DllImport("user32.dll")]
@@ -117,7 +117,7 @@ namespace _202020
                 RegisterHotKey(handle, FASTFORWARD_ID, MOD_ALT | MOD_WIN, KEY_RIGHT);
 
         }
-
+        #endregion
         public MainWindow()
         {
             InitializeComponent();
@@ -149,16 +149,25 @@ namespace _202020
                 Properties.Settings.Default.TBBminutes,
                 Properties.Settings.Default.TBBseconds);
 
+            // SOUNDS
             Notif = new MediaPlayer();
-            Notif.Open(new Uri(@"../../Media/Doot.wav", UriKind.Relative));
+            Notif.Open(new Uri(System.IO.Directory.GetCurrentDirectory().ToString() + @"\Media\Doot.wav", UriKind.RelativeOrAbsolute));
+            Notif.MediaFailed += Notif_MediaFailed;
             PlayPauseNotif = new MediaPlayer();
-            PlayPauseNotif.Open(new Uri(@"../../Media/DootWavHigh.wav", UriKind.Relative));
+            PlayPauseNotif.Open(new Uri(System.IO.Directory.GetCurrentDirectory().ToString() + @"\Media\DootWavHigh.wav", UriKind.RelativeOrAbsolute));
+            PlayPauseNotif.MediaFailed += Notif_MediaFailed;
 
             countdown = new DispatcherTimer(DispatcherPriority.Normal);
             countdown.Tick += OnTick;
             countdown.Interval = new TimeSpan(0, 0, 1);
             countdown.Start();
         }
+
+        private void Notif_MediaFailed(object sender, ExceptionEventArgs e)
+        {
+            MessageBox.Show("Failed to open Notif sound");
+        }
+
         private void OnTick(object sender, EventArgs e)
         {
             if (TimeRemaining.TotalSeconds == 0.0)
@@ -234,11 +243,11 @@ namespace _202020
                 60 * Properties.Settings.Default.BLminutes +
                 3600 * Properties.Settings.Default.BLhours);
 
-            HoursRemaining.Foreground = System.Windows.Media.Brushes.Black;
-            MinutesRemaining.Foreground = System.Windows.Media.Brushes.Black;
-            SecondsRemaining.Foreground = System.Windows.Media.Brushes.Black;
-            Colon1.Foreground = System.Windows.Media.Brushes.Black;
-            Colon2.Foreground = System.Windows.Media.Brushes.Black;
+            HoursRemaining.Foreground = Brushes.Black;
+            MinutesRemaining.Foreground = Brushes.Black;
+            SecondsRemaining.Foreground = Brushes.Black;
+            Colon1.Foreground = Brushes.Black;
+            Colon2.Foreground = Brushes.Black;
 
             if (ShowNotification && Properties.Settings.Default.NotificationTextEnabled == true)
             {
@@ -256,11 +265,11 @@ namespace _202020
                 60 * Properties.Settings.Default.TBBminutes +
                 3600 * Properties.Settings.Default.TBBhours);
 
-            HoursRemaining.Foreground = System.Windows.Media.Brushes.White;
-            MinutesRemaining.Foreground = System.Windows.Media.Brushes.White;
-            SecondsRemaining.Foreground = System.Windows.Media.Brushes.White;
-            Colon1.Foreground = System.Windows.Media.Brushes.White;
-            Colon2.Foreground = System.Windows.Media.Brushes.White;
+            HoursRemaining.Foreground = Brushes.White;
+            MinutesRemaining.Foreground = Brushes.White;
+            SecondsRemaining.Foreground = Brushes.White;
+            Colon1.Foreground = Brushes.White;
+            Colon2.Foreground = Brushes.White;
 
             if (NotifWin != null)
             {

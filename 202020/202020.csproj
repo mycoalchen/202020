@@ -73,6 +73,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="MinimizeToTray.cs" />
+    <Compile Include="ResourceMediaPlayer.cs" />
     <Compile Include="Settings.xaml.cs">
       <DependentUpon>Settings.xaml</DependentUpon>
     </Compile>
@@ -155,8 +156,12 @@
     <Resource Include="Media\Pause.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Media\Doot.wav" />
-    <Content Include="Media\DootWavHigh.wav" />
+    <Content Include="Media\Doot.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Media\DootWavHigh.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
     <Resource Include="Media\MainWindowTray.png" />
     <Resource Include="Media\MainWindowTray.ico" />
     <Resource Include="Media\Settings.png" />
