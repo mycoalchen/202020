@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 using System.Windows;
+using System.IO;
 using System.Windows.Interop;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
@@ -150,11 +151,20 @@ namespace _202020
                 Properties.Settings.Default.TBBseconds);
 
             // SOUNDS
+            using (FileStream fileStream = File.Create(Path.GetTempPath() + "Doot.wav"))
+            {
+                System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream("_202020.Media.Doot.wav").CopyTo(fileStream);
+            }
+            using (FileStream fileStream = File.Create(Path.GetTempPath() + "DootWavHigh.wav"))
+            {
+                System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream("_202020.Media.DootWavHigh.wav").CopyTo(fileStream);
+            }
+
             Notif = new MediaPlayer();
-            Notif.Open(new Uri(System.IO.Directory.GetCurrentDirectory().ToString() + @"\Media\Doot.wav", UriKind.RelativeOrAbsolute));
+            Notif.Open(new Uri(Path.Combine(Path.GetTempPath(), "Doot.wav")));
             Notif.MediaFailed += Notif_MediaFailed;
             PlayPauseNotif = new MediaPlayer();
-            PlayPauseNotif.Open(new Uri(System.IO.Directory.GetCurrentDirectory().ToString() + @"\Media\DootWavHigh.wav", UriKind.RelativeOrAbsolute));
+            PlayPauseNotif.Open(new Uri(Path.Combine(Path.GetTempPath(), "DootWavHigh.wav")));
             PlayPauseNotif.MediaFailed += Notif_MediaFailed;
 
             countdown = new DispatcherTimer(DispatcherPriority.Normal);

@@ -8,7 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("media/doot.wav")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("media/dootwavhigh.wav")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("properties/dootwavhigh.wav")]
 
 

@@ -101,6 +101,12 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <PRIResource Include="Media\Doot.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </PRIResource>
+    <PRIResource Include="Media\DootWavHigh.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </PRIResource>
     <None Include="202020Wap_TemporaryKey.pfx" />
     <Content Include="Images\BadgeLogo.scale-100.png" />
     <Content Include="Images\BadgeLogo.scale-125.png" />
@@ -158,6 +164,17 @@
     <Content Include="Images\Wide310x150Logo.scale-150.png" />
     <Content Include="Images\Wide310x150Logo.scale-200.png" />
     <Content Include="Images\Wide310x150Logo.scale-400.png" />
+    <None Include="Media\Fast Forward.png" />
+    <None Include="Media\Information.png" />
+    <None Include="Media\InformationIcon.ico" />
+    <None Include="Media\MainWindow.ico" />
+    <None Include="Media\MainWindowTray.ico" />
+    <None Include="Media\MainWindowTray.png" />
+    <None Include="Media\Notification.ico" />
+    <None Include="Media\Pause.png" />
+    <None Include="Media\Play.png" />
+    <None Include="Media\Settings.png" />
+    <None Include="Media\SettingsIcon.ico" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\202020\202020.csproj" />
