@@ -51,9 +51,7 @@ namespace _202020
                             {
                                 if ((bool)Properties.Settings.Default.PlayPauseSound)
                                 {
-                                    PlayPauseNotif.Volume = 0.005 * Properties.Settings.Default.PlayPauseVolume;
-                                    PlayPauseNotif.Position = TimeSpan.FromSeconds(0);
-                                    PlayPauseNotif.Play();
+                                    PlayPauseNotifPlay();
                                 }
                                 if (countdown.IsEnabled)
                                 {
@@ -82,8 +80,7 @@ namespace _202020
                                     if (Properties.Settings.Default.NotificationStopSound &&
                                             Properties.Settings.Default.NotificationsEnabled)
                                     {
-                                        Notif.Volume = 0.005 * Properties.Settings.Default.StopVolume;
-                                        Notif.Play(); Notif.Position = new TimeSpan(0, 0, 0);
+                                        NotifPlay(false);
                                     }
                                 }
                                 else
@@ -91,8 +88,7 @@ namespace _202020
                                     StartBreak(Properties.Settings.Default.NotificationsEnabled);
                                     if (Properties.Settings.Default.NotificationStopSound && Properties.Settings.Default.NotificationsEnabled)
                                     {
-                                        Notif.Volume = 0.005 * Properties.Settings.Default.StartVolume;
-                                        Notif.Play(); Notif.Position = new TimeSpan(0, 0, 0);
+                                        NotifPlay(true);
                                     }
                                 }
                                 UpdateTimerText();
@@ -147,7 +143,7 @@ namespace _202020
                 Properties.Settings.Default.TBBminutes,
                 Properties.Settings.Default.TBBseconds);
 
-            // SOUNDS
+            // Add sounds to manifest resource stream
             using (FileStream fileStream = File.Create(Path.GetTempPath() + "Doot.wav"))
             {
                 System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream("_202020.Media.Doot.wav").CopyTo(fileStream);
@@ -157,17 +153,29 @@ namespace _202020
                 System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream("_202020.Media.DootWavHigh.wav").CopyTo(fileStream);
             }
 
-            Notif = new MediaPlayer();
-            Notif.Open(new Uri(Path.Combine(Path.GetTempPath(), "Doot.wav")));
-            Notif.MediaFailed += Notif_MediaFailed;
-            PlayPauseNotif = new MediaPlayer();
-            PlayPauseNotif.Open(new Uri(Path.Combine(Path.GetTempPath(), "DootWavHigh.wav")));
-            PlayPauseNotif.MediaFailed += Notif_MediaFailed;
-
             countdown = new DispatcherTimer(DispatcherPriority.Normal);
             countdown.Tick += OnTick;
             countdown.Interval = new TimeSpan(0, 0, 1);
             countdown.Start();
+        }
+
+        private void NotifPlay(bool Start)
+        {
+            Notif = new MediaPlayer();
+            Notif.Open(new Uri(Path.Combine(Path.GetTempPath(), "Doot.wav")));
+            Notif.Volume = Start ? 0.005 * Properties.Settings.Default.StartVolume : 0.005 * Properties.Settings.Default.StopVolume;
+            Notif.MediaFailed += Notif_MediaFailed;
+            Notif.Play();
+            Notif.Position = new TimeSpan(0, 0, 0);
+        }
+        private void PlayPauseNotifPlay()
+        {
+            PlayPauseNotif = new MediaPlayer();
+            PlayPauseNotif.Open(new Uri(Path.Combine(Path.GetTempPath(), "DootWavHigh.wav")));
+            PlayPauseNotif.Volume = 0.005 * Properties.Settings.Default.PlayPauseVolume;
+            PlayPauseNotif.MediaFailed += Notif_MediaFailed;
+            PlayPauseNotif.Play();
+            PlayPauseNotif.Position = new TimeSpan(0, 0, 0);
         }
 
         private void Notif_MediaFailed(object sender, ExceptionEventArgs e)
@@ -184,8 +192,7 @@ namespace _202020
                     EndBreak();
                     if (Properties.Settings.Default.NotificationStopSound && Properties.Settings.Default.NotificationsEnabled)
                     {
-                        Notif.Volume = 0.005 * Properties.Settings.Default.StopVolume;
-                        Notif.Play(); Notif.Position = new TimeSpan(0, 0, 0);
+                        NotifPlay(false);
                     }
                 }
                 else
@@ -193,8 +200,7 @@ namespace _202020
                     StartBreak(Properties.Settings.Default.NotificationsEnabled);
                     if (Properties.Settings.Default.NotificationStartSound && Properties.Settings.Default.NotificationsEnabled)
                     {
-                        Notif.Volume = 0.005 * Properties.Settings.Default.StartVolume;
-                        Notif.Play(); Notif.Position = new TimeSpan(0, 0, 0);
+                        NotifPlay(true);
                     }
                 }
             }
