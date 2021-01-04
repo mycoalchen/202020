@@ -9,7 +9,7 @@
   <Identity
     Name="202020"
     Publisher="CN=Michael Chen"
-    Version="1.0.13.0" />
+    Version="1.0.14.0" />
 
   <Properties>
     <DisplayName>202020</DisplayName>

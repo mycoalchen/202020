@@ -23,3 +23,8 @@ C:\Users\Michael\source\repos\202020\202020\obj\Debug\202020.csproj.CoreCompileI
 C:\Users\Michael\source\repos\202020\202020\obj\Debug\202020.exe
 C:\Users\Michael\source\repos\202020\202020\obj\Debug\202020.pdb
 C:\Users\Michael\source\repos\202020\202020\obj\Debug\202020.csprojAssemblyReference.cache
+C:\Users\Michael\source\repos\202020\202020\bin\Debug\202020.exe.manifest
+C:\Users\Michael\source\repos\202020\202020\bin\Debug\202020.application
+C:\Users\Michael\source\repos\202020\202020\obj\Debug\202020.TrustInfo.xml
+C:\Users\Michael\source\repos\202020\202020\obj\Debug\202020.exe.manifest
+C:\Users\Michael\source\repos\202020\202020\obj\Debug\202020.application
