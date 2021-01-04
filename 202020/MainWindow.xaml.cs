@@ -141,10 +141,7 @@ namespace _202020
                     w.Hide();
                 }
             }
-            else
-            {
-                ShowInTaskbar = true;
-            }
+            else { ShowInTaskbar = true; }
 
             TimeRemaining = new TimeSpan(Properties.Settings.Default.TBBhours,
                 Properties.Settings.Default.TBBminutes,

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using System.IO;
 using System.Windows.Forms;
 
 namespace _202020
@@ -38,7 +39,8 @@ namespace _202020
                 {
                     // Initialize NotifyIcon instance "on demand"
                     _notifyIcon = new NotifyIcon();
-                    _notifyIcon.Icon = new Icon(@"../../Media/MainWindowTray.ico");
+                    Stream iconStream = System.Windows.Application.GetResourceStream(new Uri("pack://application:,,,/Media/MainWindowTray.ico")).Stream;
+                    _notifyIcon.Icon = new Icon(iconStream);
                     _notifyIcon.MouseClick += new MouseEventHandler(HandleNotifyIconClicked);
                 }
                 // Update copy of Window Title in case it has changed
