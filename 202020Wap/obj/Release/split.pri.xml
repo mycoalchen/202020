@@ -99,6 +99,18 @@
 					</Candidate>
 				</NamedResource>
 			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Media">
+				<NamedResource name="Doot.wav" uri="ms-resource://202020/Files/Media/Doot.wav">
+					<Candidate type="Path">
+						<Value>Media\Doot.wav</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DootWavHigh.wav" uri="ms-resource://202020/Files/Media/DootWavHigh.wav">
+					<Candidate type="Path">
+						<Value>Media\DootWavHigh.wav</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
 		</ResourceMapSubtree>
 	</ResourceMap>
 </PriInfo>
