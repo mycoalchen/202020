@@ -8,8 +8,8 @@
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
     <SolutionConfiguration>Release|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
-    <PackageIdentityName>202020</PackageIdentityName>
-    <PackageIdentityPublisher>CN=Michael Chen</PackageIdentityPublisher>
+    <PackageIdentityName>44686MichaelChen.202020</PackageIdentityName>
+    <PackageIdentityPublisher>CN=DDC0C21D-A155-41EB-9AE3-EB7012BDF7F1</PackageIdentityPublisher>
     <IntermediateOutputPath>C:\Users\Michael\source\repos\202020\202020Wap\obj\Release\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>

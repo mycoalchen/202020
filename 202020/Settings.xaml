@@ -181,7 +181,7 @@
                 <TextBlock Grid.Row="0" Style="{StaticResource SettingsText}" Text="Keyboard Shortcuts" Margin="10 0 0 0"/>
                 <CheckBox Grid.Row="1" Margin="4 0 0 0" BorderBrush="Black" VerticalContentAlignment="Center" Name="PlayPauseShortcut"
                     IsChecked="{Binding Source={x:Static properties:Settings.Default}, Path=PlayPauseShortcut}">
-                    <TextBlock TextAlignment="Left" FontSize="13" Text="Pause/Resume (Win + Left Alt + Space)"/>
+                    <TextBlock TextAlignment="Left" FontSize="12.5" Text="Pause/Resume (Win + Left Alt + Space)"/>
                 </CheckBox>
                 <Grid Grid.Row="2" ToolTip="Whether to play a sound when the pause/resume shortcut is pressed (The sound is higher-pitched so that you can tell the difference)">
                     <Grid.ColumnDefinitions>
@@ -203,7 +203,7 @@
                 <CheckBox Grid.Row="3" Margin="4 0 0 0" BorderBrush="Black" VerticalContentAlignment="Center" Name="FastFowardShortcut"
                           ToolTip="If sounds are enabled, they will play after Fast Forward keyboard shortcut"
                             IsChecked="{Binding Source={x:Static properties:Settings.Default}, Path=FastForwardShortcut}">
-                    <TextBlock TextAlignment="Left" FontSize="13" Text="Fast forward (Win + Left Alt + Right Arrow)"/>
+                    <TextBlock TextAlignment="Left" FontSize="12.5" Text="Fast forward (Win + Left Alt + Right Arrow)"/>
                 </CheckBox>
             </Grid>
         </Border>

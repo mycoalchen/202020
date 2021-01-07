@@ -8,8 +8,8 @@
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
     <SolutionConfiguration>Release|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
-    <PackageIdentityName>202020</PackageIdentityName>
-    <PackageIdentityPublisher>CN=Michael Chen</PackageIdentityPublisher>
+    <PackageIdentityName>44686MichaelChen.202020</PackageIdentityName>
+    <PackageIdentityPublisher>CN=DDC0C21D-A155-41EB-9AE3-EB7012BDF7F1</PackageIdentityPublisher>
     <IntermediateOutputPath>C:\Users\Michael\source\repos\202020\202020Wap\obj\Release\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
@@ -20,18 +20,18 @@
     <WindowsSdkPath>
     </WindowsSdkPath>
     <LayoutDir>C:\Users\Michael\source\repos\202020\202020Wap\bin\AnyCPU\Release\AppX</LayoutDir>
-    <RegisteredManifestChecksum>D1979FCB2AEC757AD8E09925032F97233FF1D0F1110C6AF831A20010AE728266</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>202020_1.0.0.0_neutral__qeqskk8cang6t</RegisteredPackageMoniker>
-    <RegisteredUserModeAppID>202020_qeqskk8cang6t!App</RegisteredUserModeAppID>
-    <RegisteredPackageID>202020</RegisteredPackageID>
-    <RegisteredPackagePublisher>CN=Michael Chen</RegisteredPackagePublisher>
-    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <RegisteredManifestChecksum>D0653DE805048F59D87F1C8C02D00F73564FB20D226AA503A2F10CB7FB4B7277</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>44686MichaelChen.202020_1.0.28.0_neutral__1xnyq3bbv8tvj</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>44686MichaelChen.202020_1xnyq3bbv8tvj!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>44686MichaelChen.202020</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=DDC0C21D-A155-41EB-9AE3-EB7012BDF7F1</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.28.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="C:\Users\Michael\source\repos\202020\202020Wap\bin\AnyCPU\Release\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-02T15:59:50.995</Modified>
+      <Modified>2021-01-07T02:14:51.495</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -39,223 +39,288 @@
       <PackagePath>System.Core.dll</PackagePath>
       <Modified>2019-12-03T21:04:00.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\BadgeLogo.scale-100.png">
+      <PackagePath>Images\BadgeLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-01-02T23:30:16.501</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\BadgeLogo.scale-125.png">
+      <PackagePath>Images\BadgeLogo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-01-02T23:30:16.515</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\BadgeLogo.scale-150.png">
+      <PackagePath>Images\BadgeLogo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-01-02T23:30:16.528</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\BadgeLogo.scale-200.png">
+      <PackagePath>Images\BadgeLogo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-01-02T23:30:16.542</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\BadgeLogo.scale-400.png">
+      <PackagePath>Images\BadgeLogo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-01-02T23:30:16.559</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\LargeTile.scale-100.png">
       <PackagePath>Images\LargeTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-02T04:32:44.131</Modified>
+      <Modified>2021-01-02T23:30:15.503</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\LargeTile.scale-125.png">
       <PackagePath>Images\LargeTile.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-02T04:32:44.156</Modified>
+      <Modified>2021-01-02T23:30:15.528</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\LargeTile.scale-150.png">
       <PackagePath>Images\LargeTile.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-02T04:32:44.187</Modified>
+      <Modified>2021-01-02T23:30:15.559</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\LargeTile.scale-200.png">
       <PackagePath>Images\LargeTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-02T04:32:44.231</Modified>
+      <Modified>2021-01-02T23:30:15.604</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\LargeTile.scale-400.png">
       <PackagePath>Images\LargeTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-02T04:32:44.371</Modified>
+      <Modified>2021-01-02T23:30:15.752</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\SmallTile.scale-100.png">
       <PackagePath>Images\SmallTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-02T04:32:43.792</Modified>
+      <Modified>2021-01-02T23:30:15.157</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\SmallTile.scale-125.png">
       <PackagePath>Images\SmallTile.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-02T04:32:43.806</Modified>
+      <Modified>2021-01-02T23:30:15.171</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\SmallTile.scale-150.png">
       <PackagePath>Images\SmallTile.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-02T04:32:43.819</Modified>
+      <Modified>2021-01-02T23:30:15.185</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\SmallTile.scale-200.png">
       <PackagePath>Images\SmallTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-02T04:32:43.833</Modified>
+      <Modified>2021-01-02T23:30:15.200</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\SmallTile.scale-400.png">
       <PackagePath>Images\SmallTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-02T04:32:43.853</Modified>
+      <Modified>2021-01-02T23:30:15.220</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\SplashScreen.scale-100.png">
+      <PackagePath>Images\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-01-02T23:30:16.059</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\SplashScreen.scale-125.png">
+      <PackagePath>Images\SplashScreen.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-01-02T23:30:16.094</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\SplashScreen.scale-150.png">
+      <PackagePath>Images\SplashScreen.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-01-02T23:30:16.140</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\SplashScreen.scale-200.png">
       <PackagePath>Images\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-01T00:52:34.643</Modified>
+      <Modified>2021-01-02T23:30:16.228</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\LockScreenLogo.scale-200.png">
       <PackagePath>Images\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2021-01-01T00:52:34.642</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\SplashScreen.scale-400.png">
+      <PackagePath>Images\SplashScreen.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-01-02T23:30:16.482</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\Square150x150Logo.scale-100.png">
       <PackagePath>Images\Square150x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-02T04:32:43.868</Modified>
+      <Modified>2021-01-02T23:30:15.237</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\Square150x150Logo.scale-125.png">
       <PackagePath>Images\Square150x150Logo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-02T04:32:43.883</Modified>
+      <Modified>2021-01-02T23:30:15.251</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\Square150x150Logo.scale-150.png">
       <PackagePath>Images\Square150x150Logo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-02T04:32:43.899</Modified>
+      <Modified>2021-01-02T23:30:15.267</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\Square150x150Logo.scale-200.png">
       <PackagePath>Images\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-02T04:32:43.919</Modified>
+      <Modified>2021-01-02T23:30:15.287</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\Square150x150Logo.scale-400.png">
       <PackagePath>Images\Square150x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-02T04:32:43.962</Modified>
+      <Modified>2021-01-02T23:30:15.331</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\Square44x44Logo.altform-lightunplated_targetsize-16.png">
       <PackagePath>Images\Square44x44Logo.altform-lightunplated_targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-02T04:32:44.596</Modified>
+      <Modified>2021-01-02T23:30:15.970</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\Square44x44Logo.altform-lightunplated_targetsize-24.png">
       <PackagePath>Images\Square44x44Logo.altform-lightunplated_targetsize-24.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-02T04:32:44.608</Modified>
+      <Modified>2021-01-02T23:30:15.982</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\Square44x44Logo.altform-lightunplated_targetsize-256.png">
       <PackagePath>Images\Square44x44Logo.altform-lightunplated_targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-02T04:32:44.659</Modified>
+      <Modified>2021-01-02T23:30:16.032</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\Square44x44Logo.altform-lightunplated_targetsize-32.png">
       <PackagePath>Images\Square44x44Logo.altform-lightunplated_targetsize-32.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-02T04:32:44.620</Modified>
+      <Modified>2021-01-02T23:30:15.994</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\Square44x44Logo.altform-lightunplated_targetsize-48.png">
       <PackagePath>Images\Square44x44Logo.altform-lightunplated_targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-02T04:32:44.632</Modified>
+      <Modified>2021-01-02T23:30:16.007</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\Square44x44Logo.altform-unplated_targetsize-16.png">
       <PackagePath>Images\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-02T04:32:44.522</Modified>
+      <Modified>2021-01-02T23:30:15.896</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\Square44x44Logo.altform-unplated_targetsize-256.png">
       <PackagePath>Images\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-02T04:32:44.583</Modified>
+      <Modified>2021-01-02T23:30:15.957</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\Square44x44Logo.altform-unplated_targetsize-32.png">
       <PackagePath>Images\Square44x44Logo.altform-unplated_targetsize-32.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-02T04:32:44.546</Modified>
+      <Modified>2021-01-02T23:30:15.920</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\Square44x44Logo.altform-unplated_targetsize-48.png">
       <PackagePath>Images\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-02T04:32:44.558</Modified>
+      <Modified>2021-01-02T23:30:15.932</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\Square44x44Logo.scale-100.png">
       <PackagePath>Images\Square44x44Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-02T04:32:44.383</Modified>
+      <Modified>2021-01-02T23:30:15.764</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\Square44x44Logo.scale-125.png">
       <PackagePath>Images\Square44x44Logo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-02T04:32:44.396</Modified>
+      <Modified>2021-01-02T23:30:15.775</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\Square44x44Logo.scale-150.png">
       <PackagePath>Images\Square44x44Logo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-02T04:32:44.408</Modified>
+      <Modified>2021-01-02T23:30:15.788</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\Square44x44Logo.scale-200.png">
       <PackagePath>Images\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-02T04:32:44.420</Modified>
+      <Modified>2021-01-02T23:30:15.799</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\Square44x44Logo.scale-400.png">
       <PackagePath>Images\Square44x44Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-02T04:32:44.436</Modified>
+      <Modified>2021-01-02T23:30:15.815</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\Square44x44Logo.targetsize-16.png">
       <PackagePath>Images\Square44x44Logo.targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-02T04:32:44.449</Modified>
+      <Modified>2021-01-02T23:30:15.828</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\Square44x44Logo.targetsize-24.png">
       <PackagePath>Images\Square44x44Logo.targetsize-24.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-02T04:32:44.461</Modified>
+      <Modified>2021-01-02T23:30:15.839</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Images\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-02T04:32:44.534</Modified>
+      <Modified>2021-01-02T23:30:15.908</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\Square44x44Logo.targetsize-256.png">
       <PackagePath>Images\Square44x44Logo.targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-02T04:32:44.509</Modified>
+      <Modified>2021-01-02T23:30:15.884</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\Square44x44Logo.targetsize-32.png">
       <PackagePath>Images\Square44x44Logo.targetsize-32.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-02T04:32:44.476</Modified>
+      <Modified>2021-01-02T23:30:15.851</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\Square44x44Logo.targetsize-48.png">
       <PackagePath>Images\Square44x44Logo.targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-02T04:32:44.488</Modified>
+      <Modified>2021-01-02T23:30:15.863</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\StoreLogo.png">
-      <PackagePath>Images\StoreLogo.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\StoreLogo.scale-100.png">
+      <PackagePath>Images\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-01T00:52:34.645</Modified>
+      <Modified>2021-01-02T23:30:16.571</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\StoreLogo.scale-125.png">
+      <PackagePath>Images\StoreLogo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-01-02T23:30:16.583</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\StoreLogo.scale-150.png">
+      <PackagePath>Images\StoreLogo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-01-02T23:30:16.596</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\StoreLogo.scale-200.png">
+      <PackagePath>Images\StoreLogo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-01-02T23:30:16.610</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\StoreLogo.scale-400.png">
+      <PackagePath>Images\StoreLogo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2021-01-02T23:30:16.630</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\Wide310x150Logo.scale-100.png">
       <PackagePath>Images\Wide310x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-02T04:32:43.977</Modified>
+      <Modified>2021-01-02T23:30:15.347</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\Wide310x150Logo.scale-125.png">
       <PackagePath>Images\Wide310x150Logo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-02T04:32:43.994</Modified>
+      <Modified>2021-01-02T23:30:15.364</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\Wide310x150Logo.scale-150.png">
       <PackagePath>Images\Wide310x150Logo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-02T04:32:44.017</Modified>
+      <Modified>2021-01-02T23:30:15.384</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\Wide310x150Logo.scale-200.png">
       <PackagePath>Images\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-02T04:32:44.042</Modified>
+      <Modified>2021-01-02T23:30:15.411</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\Wide310x150Logo.scale-400.png">
       <PackagePath>Images\Wide310x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-02T04:32:44.111</Modified>
+      <Modified>2021-01-02T23:30:15.482</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\bin\AnyCPU\Release\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2021-01-02T04:34:31.777</Modified>
+      <Modified>2021-01-07T02:14:51.415</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020\Media\Doot.wav">
       <PackagePath>202020\Media\Doot.wav</PackagePath>
@@ -267,11 +332,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020\bin\Release\202020.exe">
       <PackagePath>202020\202020.exe</PackagePath>
-      <Modified>2021-01-02T15:59:50.761</Modified>
+      <Modified>2021-01-07T02:14:50.668</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020\bin\Release\202020.exe.config">
       <PackagePath>202020\202020.exe.config</PackagePath>
-      <Modified>2021-01-01T02:58:39.044</Modified>
+      <Modified>2021-01-02T16:02:23.052</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

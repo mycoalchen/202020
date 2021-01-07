@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="202020.exe" size="320512">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="202020.exe" size="321960">
       <assemblyIdentity name="202020" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>AyX6dkyBu2fPDG1YMNB1id4qzdvq4rqerfuS2B4CnFo=</dsig:DigestValue>
+        <dsig:DigestValue>WNblCRfJM5Q5KJHqRRU2ZeAmy01dDoq1zEPnjjaAqEU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -79,4 +79,11 @@
       <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
     </application>
   </compatibility>
-</asmv1:assembly>
+  <application xmlns="urn:schemas-microsoft-com:asm.v3">
+    <windowsSettings>
+      <dpiAwareness xmlns="http://schemas.microsoft.com/SMI/2016/WindowsSettings">PerMonitor</dpiAwareness>
+      <dpiAware xmlns="http://schemas.microsoft.com/SMI/2005/WindowsSettings">true</dpiAware>
+    </windowsSettings>
+  </application>
+  --&gt;
+  </asmv1:assembly>

@@ -14,14 +14,14 @@
     <framework targetVersion="4.7.2" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="202020.exe.manifest" size="4556">
+    <dependentAssembly dependencyType="install" codebase="202020.exe.manifest" size="4893">
       <assemblyIdentity name="202020.exe" version="1.0.0.5" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>oeEeT3A73Gi4L1m+apSUiKwGJEGitJ/T14OEP/wqxjw=</dsig:DigestValue>
+        <dsig:DigestValue>CxjBk5nOvWxImH/+dSRP9bawpgZISxG+n8oTqSu7DbM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -7,15 +7,15 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="202020" Publisher="CN=Michael Chen" Version="1.0.0.0" ProcessorArchitecture="neutral" />
+  <Identity Name="44686MichaelChen.202020" Publisher="CN=DDC0C21D-A155-41EB-9AE3-EB7012BDF7F1" Version="1.0.28.0" ProcessorArchitecture="neutral" />
   <Properties>
     <DisplayName>202020</DisplayName>
     <PublisherDisplayName>Michael Chen</PublisherDisplayName>
     <Logo>Images\StoreLogo.png</Logo>
   </Properties>
   <Dependencies>
-    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.14393.0" MaxVersionTested="10.0.18362.0" />
-    <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.14393.0" MaxVersionTested="10.0.18362.0" />
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17134.0" MaxVersionTested="10.0.18362.0" />
+    <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.17134.0" MaxVersionTested="10.0.18362.0" />
   </Dependencies>
   <Resources>
     <Resource Language="EN-US" />
@@ -31,6 +31,7 @@
           </uap:ShowNameOnTiles>
         </uap:DefaultTile>
         <uap:SplashScreen Image="Images\SplashScreen.png" />
+        <uap:LockScreen BadgeLogo="Images\BadgeLogo.png" Notification="badgeAndTileText" />
       </uap:VisualElements>
     </Application>
   </Applications>

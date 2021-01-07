@@ -141,7 +141,7 @@ namespace _202020
 
             TimeRemaining = new TimeSpan(Properties.Settings.Default.TBBhours,
                 Properties.Settings.Default.TBBminutes,
-                Properties.Settings.Default.TBBseconds);
+                Properties.Settings.Default.TBBseconds + 1);
 
             // Add sounds to manifest resource stream
             using (FileStream fileStream = File.Create(Path.GetTempPath() + "Doot.wav"))
@@ -254,7 +254,7 @@ namespace _202020
             TimeRemaining = TimeSpan.FromSeconds(
                 Properties.Settings.Default.BLseconds +
                 60 * Properties.Settings.Default.BLminutes +
-                3600 * Properties.Settings.Default.BLhours);
+                3600 * Properties.Settings.Default.BLhours + 1);
 
             HoursRemaining.Foreground = Brushes.Black;
             MinutesRemaining.Foreground = Brushes.Black;
@@ -276,7 +276,7 @@ namespace _202020
             TimeRemaining = TimeSpan.FromSeconds(
                 Properties.Settings.Default.TBBseconds +
                 60 * Properties.Settings.Default.TBBminutes +
-                3600 * Properties.Settings.Default.TBBhours);
+                3600 * Properties.Settings.Default.TBBhours + 1);
 
             HoursRemaining.Foreground = Brushes.White;
             MinutesRemaining.Foreground = Brushes.White;

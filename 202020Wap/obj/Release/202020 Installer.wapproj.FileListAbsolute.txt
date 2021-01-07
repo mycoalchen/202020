@@ -27,3 +27,5 @@ C:\Users\Michael\source\repos\202020\202020Wap\obj\Release\qualifiers.txt.interm
 C:\Users\Michael\source\repos\202020\202020Wap\obj\Release\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Michael\source\repos\202020\202020Wap\obj\Release\ProjectArchitectures.txt
 C:\Users\Michael\source\repos\202020\202020Wap\obj\Release\202020 Installer.wapproj.LastBuild.txt
+C:\Users\Michael\source\repos\202020\202020Wap\bin\AnyCPU\Release\Upload\AppxManifest.xml
+C:\Users\Michael\source\repos\202020\202020Wap\bin\AnyCPU\Release\Upload\202020 Installer.build.appxrecipe
