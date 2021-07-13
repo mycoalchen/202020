@@ -49,17 +49,21 @@ namespace _202020
                         case PLAYPAUSE_ID: // Play/Pause
                             if (Properties.Settings.Default.PlayPauseShortcut)
                             {
-                                if ((bool)Properties.Settings.Default.PlayPauseSound)
-                                {
-                                    PlayPauseNotifPlay();
-                                }
                                 if (countdown.IsEnabled)
                                 {
+                                    if ((bool)Properties.Settings.Default.PlayPauseSound)
+                                    {
+                                        PlayPauseNotifPlay(false);
+                                    }
                                     countdown.IsEnabled = false;
                                     PlayPauseImage.Source = new BitmapImage(new Uri(@"/Media/Play.png", UriKind.Relative));
                                 }
                                 else
                                 {
+                                    if ((bool)Properties.Settings.Default.PlayPauseSound)
+                                    {
+                                        PlayPauseNotifPlay(true);
+                                    }
                                     countdown.IsEnabled = true;
                                     PlayPauseImage.Source = new BitmapImage(new Uri(@"/Media/Pause.png", UriKind.Relative));
                                 }
@@ -119,7 +123,6 @@ namespace _202020
         {
             InitializeComponent();
             MainTimeToolTip.Text = "Time until next break";
-
             if (!Properties.Settings.Default.RunInTaskbar)
             {
                 MinimizeToTray.Enable(this);
@@ -144,13 +147,22 @@ namespace _202020
                 Properties.Settings.Default.TBBseconds + 1);
 
             // Add sounds to manifest resource stream
-            using (FileStream fileStream = File.Create(Path.GetTempPath() + "Doot.wav"))
+            using (FileStream fileStream = File.Create(Path.GetTempPath() + "StartBreak.wav"))
             {
-                System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream("_202020.Media.Doot.wav").CopyTo(fileStream);
+                System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream("_202020.Media.StartBreak.wav").CopyTo(fileStream);
+                MessageBox.Show("Got here!");
             }
-            using (FileStream fileStream = File.Create(Path.GetTempPath() + "DootWavHigh.wav"))
+            using (FileStream fileStream = File.Create(Path.GetTempPath() + "StopBreak.wav"))
             {
-                System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream("_202020.Media.DootWavHigh.wav").CopyTo(fileStream);
+                System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream("_202020.Media.StopBreak.wav").CopyTo(fileStream);
+            }
+            using (FileStream fileStream = File.Create(Path.GetTempPath() + "Play.wav"))
+            {
+                System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream("_202020.Media.Play.wav").CopyTo(fileStream);
+            }
+            using (FileStream fileStream = File.Create(Path.GetTempPath() + "Pause.wav"))
+            {
+                System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream("_202020.Media.Pause.wav").CopyTo(fileStream);
             }
 
             countdown = new DispatcherTimer(DispatcherPriority.Normal);
@@ -162,25 +174,39 @@ namespace _202020
         private void NotifPlay(bool Start)
         {
             Notif = new MediaPlayer();
-            Notif.Open(new Uri(Path.Combine(Path.GetTempPath(), "Doot.wav")));
-            Notif.Volume = Start ? 0.005 * Properties.Settings.Default.StartVolume : 0.005 * Properties.Settings.Default.StopVolume;
+            if (Start)
+            {
+                Notif.Open(new Uri(Path.Combine(Path.GetTempPath(), "StartBreak.wav")));
+            }
+            else
+            {
+                Notif.Open(new Uri(Path.Combine(Path.GetTempPath(), "StopBreak.wav")));
+            }
             Notif.MediaFailed += Notif_MediaFailed;
+            Notif.Volume = Start ? 0.01 * Properties.Settings.Default.StartVolume : 0.01 * Properties.Settings.Default.StopVolume;
             Notif.Play();
             Notif.Position = new TimeSpan(0, 0, 0);
         }
-        private void PlayPauseNotifPlay()
+        private void PlayPauseNotifPlay(bool Play)
         {
             PlayPauseNotif = new MediaPlayer();
-            PlayPauseNotif.Open(new Uri(Path.Combine(Path.GetTempPath(), "DootWavHigh.wav")));
-            PlayPauseNotif.Volume = 0.005 * Properties.Settings.Default.PlayPauseVolume;
+            if (Play)
+            {
+                PlayPauseNotif.Open(new Uri(Path.Combine(Path.GetTempPath(), "Play.wav")));
+            }
+            else
+            {
+                PlayPauseNotif.Open(new Uri(Path.Combine(Path.GetTempPath(), "Pause.wav")));
+            }
             PlayPauseNotif.MediaFailed += Notif_MediaFailed;
+            PlayPauseNotif.Volume = 0.01 * Properties.Settings.Default.PlayPauseVolume;
             PlayPauseNotif.Play();
             PlayPauseNotif.Position = new TimeSpan(0, 0, 0);
         }
 
         private void Notif_MediaFailed(object sender, ExceptionEventArgs e)
         {
-            MessageBox.Show("Failed to open Notif sound");
+            MessageBox.Show("Error- failed to open notification sound");
         }
 
         private void OnTick(object sender, EventArgs e)

@@ -2,6 +2,10 @@
 202020\202020.exe.config
 202020\Media\Doot.wav
 202020\Media\DootWavHigh.wav
+202020\Media\Pause.wav
+202020\Media\Play.wav
+202020\Media\StartBreak.wav
+202020\Media\StopBreak.wav
 Images\BadgeLogo.scale-100.png
 Images\BadgeLogo.scale-125.png
 Images\BadgeLogo.scale-150.png
@@ -58,4 +62,3 @@ Images\Wide310x150Logo.scale-125.png
 Images\Wide310x150Logo.scale-150.png
 Images\Wide310x150Logo.scale-200.png
 Images\Wide310x150Logo.scale-400.png
-System.Core.dll

@@ -27,4 +27,8 @@ C:\Users\Michael\source\repos\202020\202020\bin\Release\202020.application
 C:\Users\Michael\source\repos\202020\202020\obj\Release\202020.TrustInfo.xml
 C:\Users\Michael\source\repos\202020\202020\obj\Release\202020.exe.manifest
 C:\Users\Michael\source\repos\202020\202020\obj\Release\202020.application
-C:\Users\Michael\source\repos\202020\202020\obj\Release\202020.csprojAssemblyReference.cache
+C:\Users\Michael\source\repos\202020\202020\obj\Release\202020.csproj.AssemblyReference.cache
+C:\Users\Michael\source\repos\202020\202020\bin\Release\Media\Pause.wav
+C:\Users\Michael\source\repos\202020\202020\bin\Release\Media\Play.wav
+C:\Users\Michael\source\repos\202020\202020\bin\Release\Media\StartBreak.wav
+C:\Users\Michael\source\repos\202020\202020\bin\Release\Media\StopBreak.wav

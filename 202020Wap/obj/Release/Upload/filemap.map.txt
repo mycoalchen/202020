@@ -4,7 +4,6 @@
 
 [Files]
 "C:\Users\Michael\source\repos\202020\202020Wap\obj\Release\Upload\filemap.pri"			"resources.pri"
-"C:\Users\Michael\source\repos\202020\202020Wap\obj\Release\PackageUploadLayout\System.Core.dll"			"System.Core.dll"
 "C:\Users\Michael\source\repos\202020\202020Wap\obj\Release\PackageUploadLayout\Images\Wide310x150Logo.scale-200.png"			"Images\Wide310x150Logo.scale-200.png"
 "C:\Users\Michael\source\repos\202020\202020Wap\obj\Release\PackageUploadLayout\Images\StoreLogo.scale-200.png"			"Images\StoreLogo.scale-200.png"
 "C:\Users\Michael\source\repos\202020\202020Wap\obj\Release\PackageUploadLayout\Images\Square44x44Logo.targetsize-48.png"			"Images\Square44x44Logo.targetsize-48.png"
@@ -29,6 +28,10 @@
 "C:\Users\Michael\source\repos\202020\202020Wap\obj\Release\PackageUploadLayout\Images\LockScreenLogo.scale-200.png"			"Images\LockScreenLogo.scale-200.png"
 "C:\Users\Michael\source\repos\202020\202020Wap\obj\Release\PackageUploadLayout\Images\LargeTile.scale-200.png"			"Images\LargeTile.scale-200.png"
 "C:\Users\Michael\source\repos\202020\202020Wap\obj\Release\PackageUploadLayout\Images\BadgeLogo.scale-200.png"			"Images\BadgeLogo.scale-200.png"
+"C:\Users\Michael\source\repos\202020\202020Wap\obj\Release\PackageUploadLayout\202020\Media\StopBreak.wav"			"202020\Media\StopBreak.wav"
+"C:\Users\Michael\source\repos\202020\202020Wap\obj\Release\PackageUploadLayout\202020\Media\StartBreak.wav"			"202020\Media\StartBreak.wav"
+"C:\Users\Michael\source\repos\202020\202020Wap\obj\Release\PackageUploadLayout\202020\Media\Play.wav"			"202020\Media\Play.wav"
+"C:\Users\Michael\source\repos\202020\202020Wap\obj\Release\PackageUploadLayout\202020\Media\Pause.wav"			"202020\Media\Pause.wav"
 "C:\Users\Michael\source\repos\202020\202020Wap\obj\Release\PackageUploadLayout\202020\Media\DootWavHigh.wav"			"202020\Media\DootWavHigh.wav"
 "C:\Users\Michael\source\repos\202020\202020Wap\obj\Release\PackageUploadLayout\202020\Media\Doot.wav"			"202020\Media\Doot.wav"
 "C:\Users\Michael\source\repos\202020\202020Wap\obj\Release\PackageUploadLayout\202020\202020.exe.config"			"202020\202020.exe.config"
