@@ -150,7 +150,6 @@ namespace _202020
             using (FileStream fileStream = File.Create(Path.GetTempPath() + "StartBreak.wav"))
             {
                 System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream("_202020.Media.StartBreak.wav").CopyTo(fileStream);
-                MessageBox.Show("Got here!");
             }
             using (FileStream fileStream = File.Create(Path.GetTempPath() + "StopBreak.wav"))
             {
