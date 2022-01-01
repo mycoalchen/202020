@@ -9,7 +9,7 @@ The 20/20/20 rule is an easy-to-follow, science-backed tip for keeping your eyes
 **Why can't I see the 202020 icon when it's running?**
 If you have "Run in Taskbar" unchecked in settings (unchecked by default), 202020 runs in the tray.
 
-** How do I download this app?**
+**How do I download this app?**
 202020 is exclusive to Windows PCs and can only be downloaded from the Microsoft Store.
 
 Thanks for visiting!
