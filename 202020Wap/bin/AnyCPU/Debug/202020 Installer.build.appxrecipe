@@ -8,8 +8,8 @@
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
-    <PackageIdentityName>202020</PackageIdentityName>
-    <PackageIdentityPublisher>CN=Michael Chen</PackageIdentityPublisher>
+    <PackageIdentityName>44686MichaelChen.202020</PackageIdentityName>
+    <PackageIdentityPublisher>CN=DDC0C21D-A155-41EB-9AE3-EB7012BDF7F1</PackageIdentityPublisher>
     <IntermediateOutputPath>C:\Users\Michael\source\repos\202020\202020Wap\obj\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
@@ -25,9 +25,6 @@
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\Reference Assemblies\Microsoft\Framework\v3.5\System.Core.dll">
-      <PackagePath>System.Core.dll</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020Wap\Images\BadgeLogo.scale-100.png">
       <PackagePath>Images\BadgeLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
@@ -259,6 +256,18 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020\Media\DootWavHigh.wav">
       <PackagePath>202020\Media\DootWavHigh.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020\Media\Pause.wav">
+      <PackagePath>202020\Media\Pause.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020\Media\Play.wav">
+      <PackagePath>202020\Media\Play.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020\Media\StartBreak.wav">
+      <PackagePath>202020\Media\StartBreak.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020\Media\StopBreak.wav">
+      <PackagePath>202020\Media\StopBreak.wav</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Michael\source\repos\202020\202020\bin\Debug\202020.exe">
       <PackagePath>202020\202020.exe</PackagePath>

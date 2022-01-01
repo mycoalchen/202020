@@ -2,6 +2,7 @@
 using System.Runtime.InteropServices;
 using System.Windows;
 using System.IO;
+using System.Diagnostics;
 using System.Windows.Interop;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
@@ -18,8 +19,8 @@ namespace _202020
         public TimeSpan TimeRemaining;
         DispatcherTimer countdown;
         bool OnBreak = false;
-        MediaPlayer Notif;
-        MediaPlayer PlayPauseNotif;
+        MediaPlayer StartNotif, StopNotif;
+        MediaPlayer PlayNotif, PauseNotif;
         BreakNotification NotifWin;
 
         Window w; // helper window used to hide from alt-tab menu
@@ -169,40 +170,52 @@ namespace _202020
             countdown.Interval = new TimeSpan(0, 0, 1);
             countdown.Start();
 
-            
+            StartNotif = new MediaPlayer();
+            StartNotif.Open(new Uri(Path.Combine(Path.GetTempPath(), "StartBreak.wav")));
+            StopNotif = new MediaPlayer();
+            StopNotif.Open(new Uri(Path.Combine(Path.GetTempPath(), "StopBreak.wav")));
+            PlayNotif = new MediaPlayer();
+            PlayNotif.Open(new Uri(Path.Combine(Path.GetTempPath(), "Play.wav")));
+            PauseNotif = new MediaPlayer();
+            PauseNotif.Open(new Uri(Path.Combine(Path.GetTempPath(), "Pause.wav")));
+
         }
 
         private void NotifPlay(bool Start)
         {
-            Notif = new MediaPlayer();
+            Debug.WriteLine("NotifPlay called");
             if (Start)
             {
-                Notif.Open(new Uri(Path.Combine(Path.GetTempPath(), "StartBreak.wav")));
+                StartNotif.MediaFailed += Notif_MediaFailed;
+                StartNotif.Volume = Start ? 0.04 * Properties.Settings.Default.StartVolume : 0.04 * Properties.Settings.Default.StopVolume;
+                StartNotif.Position = new TimeSpan(0, 0, 0);
+                StartNotif.Play();
             }
             else
             {
-                Notif.Open(new Uri(Path.Combine(Path.GetTempPath(), "StopBreak.wav")));
+                StopNotif.MediaFailed += Notif_MediaFailed;
+                StopNotif.Volume = Start ? 0.04 * Properties.Settings.Default.StartVolume : 0.04 * Properties.Settings.Default.StopVolume;
+                StopNotif.Position = new TimeSpan(0, 0, 0);
+                StopNotif.Play();
             }
-            Notif.MediaFailed += Notif_MediaFailed;
-            Notif.Volume = Start ? 0.02 * Properties.Settings.Default.StartVolume : 0.02 * Properties.Settings.Default.StopVolume;
-            Notif.Play();
-            Notif.Position = new TimeSpan(0, 0, 0);
         }
         private void PlayPauseNotifPlay(bool Play)
         {
-            PlayPauseNotif = new MediaPlayer();
+            Debug.WriteLine("PlayPauseNotifPlay called");
             if (Play)
             {
-                PlayPauseNotif.Open(new Uri(Path.Combine(Path.GetTempPath(), "Play.wav")));
+                PlayNotif.MediaFailed += Notif_MediaFailed;
+                PlayNotif.Volume = 0.02 * Properties.Settings.Default.StartVolume;
+                PlayNotif.Position = new TimeSpan(0, 0, 0);
+                PlayNotif.Play();
             }
             else
             {
-                PlayPauseNotif.Open(new Uri(Path.Combine(Path.GetTempPath(), "Pause.wav")));
+                PauseNotif.MediaFailed += Notif_MediaFailed;
+                PauseNotif.Volume = 0.02 * Properties.Settings.Default.StopVolume;
+                PauseNotif.Position = new TimeSpan(0, 0, 0);
+                PauseNotif.Play();
             }
-            PlayPauseNotif.MediaFailed += Notif_MediaFailed;
-            PlayPauseNotif.Volume = 0.02 * Properties.Settings.Default.PlayPauseVolume;
-            PlayPauseNotif.Play();
-            PlayPauseNotif.Position = new TimeSpan(0, 0, 0);
         }
 
         private void Notif_MediaFailed(object sender, ExceptionEventArgs e)
@@ -221,6 +234,7 @@ namespace _202020
                     {
                         NotifPlay(false);
                     }
+                    Debug.WriteLine("Finished break");
                 }
                 else
                 { // start break

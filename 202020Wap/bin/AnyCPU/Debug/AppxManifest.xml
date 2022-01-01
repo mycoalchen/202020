@@ -7,7 +7,7 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="202020" Publisher="CN=Michael Chen" Version="1.0.14.0" ProcessorArchitecture="neutral" />
+  <Identity Name="44686MichaelChen.202020" Publisher="CN=DDC0C21D-A155-41EB-9AE3-EB7012BDF7F1" Version="1.0.33.0" ProcessorArchitecture="neutral" />
   <Properties>
     <DisplayName>202020</DisplayName>
     <PublisherDisplayName>Michael Chen</PublisherDisplayName>
@@ -44,7 +44,7 @@
     <build:Item Name="VisualStudio" Version="16.0" />
     <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Community 2019" />
     <build:Item Name="OperatingSystem" Version="10.0.19041.1 (WinBuild.160101.0800)" />
-    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="16.0.30804.86" />
+    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="16.0.31410.357" />
     <build:Item Name="ProjectGUID" Value="d3fb1e09-6d68-4fff-8928-5d9a47636c99" />
     <build:Item Name="MakePri.exe" Version="10.0.18362.1 (WinBuild.160101.0800)" />
   </build:Metadata>

@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="202020.exe" size="832936">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="202020.exe" size="833448">
       <assemblyIdentity name="202020" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>pmf+4BEfbjkng+eyCAPvLfJypyORGAnmYGU4+9kMGx8=</dsig:DigestValue>
+        <dsig:DigestValue>QL1LfKCh+sFunZtYgXf9TupXk6jqKrzDHkSW1A7Jr3k=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
