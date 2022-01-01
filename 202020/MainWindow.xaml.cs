@@ -168,6 +168,8 @@ namespace _202020
             countdown.Tick += OnTick;
             countdown.Interval = new TimeSpan(0, 0, 1);
             countdown.Start();
+
+            
         }
 
         private void NotifPlay(bool Start)
@@ -182,7 +184,7 @@ namespace _202020
                 Notif.Open(new Uri(Path.Combine(Path.GetTempPath(), "StopBreak.wav")));
             }
             Notif.MediaFailed += Notif_MediaFailed;
-            Notif.Volume = Start ? 0.01 * Properties.Settings.Default.StartVolume : 0.01 * Properties.Settings.Default.StopVolume;
+            Notif.Volume = Start ? 0.02 * Properties.Settings.Default.StartVolume : 0.02 * Properties.Settings.Default.StopVolume;
             Notif.Play();
             Notif.Position = new TimeSpan(0, 0, 0);
         }
@@ -198,7 +200,7 @@ namespace _202020
                 PlayPauseNotif.Open(new Uri(Path.Combine(Path.GetTempPath(), "Pause.wav")));
             }
             PlayPauseNotif.MediaFailed += Notif_MediaFailed;
-            PlayPauseNotif.Volume = 0.01 * Properties.Settings.Default.PlayPauseVolume;
+            PlayPauseNotif.Volume = 0.02 * Properties.Settings.Default.PlayPauseVolume;
             PlayPauseNotif.Play();
             PlayPauseNotif.Position = new TimeSpan(0, 0, 0);
         }

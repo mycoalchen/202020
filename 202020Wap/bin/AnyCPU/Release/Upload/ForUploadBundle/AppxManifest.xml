@@ -7,7 +7,7 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="44686MichaelChen.202020" Publisher="CN=DDC0C21D-A155-41EB-9AE3-EB7012BDF7F1" Version="1.0.32.0" ProcessorArchitecture="neutral" />
+  <Identity Name="44686MichaelChen.202020" Publisher="CN=DDC0C21D-A155-41EB-9AE3-EB7012BDF7F1" Version="1.0.33.0" ProcessorArchitecture="neutral" />
   <Properties>
     <DisplayName>202020</DisplayName>
     <PublisherDisplayName>Michael Chen</PublisherDisplayName>
