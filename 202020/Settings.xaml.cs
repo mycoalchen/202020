@@ -3,6 +3,8 @@ using System.Globalization;
 using System.ComponentModel;
 using System.Windows;
 using System.Windows.Data;
+using System.Diagnostics;
+using Microsoft.Win32;
 
 namespace _202020
 {
@@ -110,12 +112,29 @@ namespace _202020
             Properties.Settings.Default.PlayPauseVolume = _PlayPauseVolume;
             Properties.Settings.Default.PlayPauseSound = (bool)PlayPauseSoundEnabled.IsChecked;
 
-            // Run in taskbar
+            // Run settings
             Properties.Settings.Default.RunInTaskbar = (bool)RunInTaskbar.IsChecked;
             Properties.Settings.Default.ShowInAltTab = (bool)ShowInAltTab.IsChecked || (bool)RunInTaskbar.IsChecked;
+            Properties.Settings.Default.RunAtStartup = (bool)RunAtStartup.IsChecked;
+                
             Properties.Settings.Default.Save();
 
             Application.Current.Properties["SettingsOpen"] = false;
+
+            if (Properties.Settings.Default.RunAtStartup)
+            {
+                var path = @"SOFTWARE\Microsoft\Windows\CurrentVersion\Run";
+                RegistryKey key = Registry.CurrentUser.OpenSubKey(path, true);
+                key.SetValue("202020", Process.GetCurrentProcess().MainModule.FileName);
+                // key.SetValue("202020", System.Reflection.Assembly.GetExecutingAssembly().Location);
+            }
+            else
+            {
+                var path = @"SOFTWARE\Microsoft\Windows\CurrentVersion\Run";
+                RegistryKey key = Registry.CurrentUser.OpenSubKey(path, true);
+                key.DeleteValue("202020", false);
+            }
+
             this.Close();
         }
 
@@ -134,6 +153,7 @@ namespace _202020
             StopSound.IsChecked = true;
             ShowInAltTab.IsChecked = true;
             RunInTaskbar.IsChecked = false;
+            RunAtStartup.IsChecked = false;
             StartVolume.Text = "50";
             StopVolume.Text = "50";
             PlayPauseSoundEnabled.IsChecked = true;

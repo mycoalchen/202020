@@ -42,24 +42,24 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="202020.exe" size="833448">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="202020.exe" size="833472">
       <assemblyIdentity name="202020" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>QL1LfKCh+sFunZtYgXf9TupXk6jqKrzDHkSW1A7Jr3k=</dsig:DigestValue>
+        <dsig:DigestValue>N6jpEdnjh1sEENnfSdMRLQ3rMBK0p+EsecG2mIMyHIw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="202020.exe.config" size="3361">
+  <file name="202020.exe.config" size="3487">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>ipKrB2Ia39/r285omBdSd/AoOUb/2LH1ht4vMRTw23k=</dsig:DigestValue>
+      <dsig:DigestValue>9n2DM0ypOdqyTkUDN636ILRp/3shwz4/TzIpJI1gXR4=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">

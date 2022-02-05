@@ -9,7 +9,7 @@
         ResizeMode="CanMinimize"
         ShowInTaskbar="True"
         Icon="Media/SettingsIcon.ico"
-        Title="Settings" Height="700" Width="300">
+        Title="Settings" Height="750" Width="300">
     <Window.Resources>
         <local:TwoDigit x:Key="TwoDigit"/>
     </Window.Resources>
@@ -25,7 +25,7 @@
             <RowDefinition Height="8*"/>
             <RowDefinition Height="50*"/>
             <RowDefinition Height="8*"/>
-            <RowDefinition Height="40*"/>
+            <RowDefinition Height="50*"/>
             <RowDefinition Height="8*"/>
             <RowDefinition Height="19*"/>
         </Grid.RowDefinitions>
@@ -213,18 +213,25 @@
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
                 <TextBlock Grid.Row="0" Margin="10 0 0 0" Style="{StaticResource SettingsText}" Text="Run Settings"/>
-                <CheckBox Grid.Row="2"
-                        Margin="4 0 0 0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="13" VerticalContentAlignment="Center" Name="RunInTaskbar"
-                        Click="RunInTaskbar_Click" IsChecked="{Binding Source={x:Static properties:Settings.Default}, Path=RunInTaskbar}">
-                    Run in taskbar
-                </CheckBox>
                 <CheckBox Grid.Row="1"
                           ToolTip="This will automatically be set to true if &quot;Run in taskbar&quot; is checked"
                         Margin="4 0 0 0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="13" VerticalContentAlignment="Center" Name="ShowInAltTab"
                         IsChecked="{Binding Source={x:Static properties:Settings.Default}, Path=ShowInAltTab}">
                     Show in Alt-Tab menu
+                </CheckBox>
+                <CheckBox Grid.Row="2"
+                        Margin="4 0 0 0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="13" VerticalContentAlignment="Center" Name="RunInTaskbar"
+                        Click="RunInTaskbar_Click" IsChecked="{Binding Source={x:Static properties:Settings.Default}, Path=RunInTaskbar}">
+                    Run in taskbar
+                </CheckBox>
+                <CheckBox Grid.Row="3"
+                          ToolTip="This will automatically be set to true if &quot;Run in taskbar&quot; is checked"
+                        Margin="4 0 0 0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="13" VerticalContentAlignment="Center" Name="RunAtStartup"
+                        IsChecked="{Binding Source={x:Static properties:Settings.Default}, Path=RunAtStartup}">
+                    Run at startup
                 </CheckBox>
             </Grid>
         </Border>
