@@ -1,135 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type='text/xsl' href='C:\ProgramData\Windows App Certification Kit\results.xsl'?>
-<REPORT xml:lang="en-US" OVERALL_RESULT="WARNING" VERSION="10.0.19041.685" LATEST_VERSION="TRUE" UPDATE_DOWNLOAD_URL="" TOOLSET_ARCHITECTURE="x64" SecureBoot="FALSE" APP_TYPE="Centennial" PUBLISHER_DISPLAY_NAME="CN=DDC0C21D-A155-41EB-9AE3-EB7012BDF7F1" APP_NAME="44686MichaelChen.202020" APP_VERSION="1.0.34.0" OSVERSION="10.0.19043.0" OS="Microsoft Windows 10 Home" PER_USER_APPLICATION="" PARTIAL_RUN="FALSE" LCID="1033" X64_ONLY="FALSE" VALIDATION_TYPE="UI" ReportGenerationTime="1/1/2022 1:01:55 PM" ID="16a5f0195b3f634d631ae00470484c5d">
+<REPORT xml:lang="en-US" OVERALL_RESULT="PASS" VERSION="10.0.19041.685" LATEST_VERSION="TRUE" UPDATE_DOWNLOAD_URL="" TOOLSET_ARCHITECTURE="x64" SecureBoot="FALSE" APP_TYPE="Centennial" PUBLISHER_DISPLAY_NAME="CN=DDC0C21D-A155-41EB-9AE3-EB7012BDF7F1" APP_NAME="44686MichaelChen.202020" APP_VERSION="1.1.2.0" OSVERSION="10.0.19043.0" OS="Microsoft Windows 10 Home" PER_USER_APPLICATION="" PARTIAL_RUN="TRUE" LCID="1033" X64_ONLY="FALSE" VALIDATION_TYPE="UI" ReportGenerationTime="2/5/2022 12:52:50 AM" ID="080b07fcbadd1ea8208bad9ec7c314f7">
   <REQUIREMENTS>
-    <REQUIREMENT NUMBER="3" TITLE="Digitally signed file test" RATIONALE="An Authenticode digital signature allows users to be sure that the software is genuine. It also allows detection if a file has been tampered with e.g. infected by a virus.">
-      <TEST INDEX="2" NAME="Install signed driver and executable files" DESCRIPTION="Install signed driver and executable files." EXECUTIONTIME="00h:00m:01s.37ms" OPTIONAL="TRUE">
-        <MESSAGES />
-        <RESULT><![CDATA[PASS]]></RESULT>
-      </TEST>
-    </REQUIREMENT>
-    <REQUIREMENT NUMBER="6" TITLE="User account control (UAC) test" RATIONALE="Most applications do not require administrator privileges at run time, and should be just fine running as a standard-user. Windows applications must have a manifest (embedded or external) to define its execution level that tells OS the privileges needed to run the application.">
-      <TEST INDEX="11" NAME="User account control run level" DESCRIPTION="Windows® applications must have a manifest (embedded or external) to define its execution level that tells OS the privileges needed to run the application." EXECUTIONTIME="00h:00m:01s.00ms" OPTIONAL="TRUE">
-        <MESSAGES />
-        <RESULT><![CDATA[PASS]]></RESULT>
-      </TEST>
-    </REQUIREMENT>
-    <REQUIREMENT NUMBER="12" TITLE="Package compliance test" RATIONALE="The package does not satisfy Store compliance rules.">
-      <TEST INDEX="77" NAME="Application count" DESCRIPTION="One package should not define more than one app in the manifest." EXECUTIONTIME="00h:00m:01s.07ms" OPTIONAL="TRUE">
-        <MESSAGES />
-        <RESULT><![CDATA[PASS]]></RESULT>
-      </TEST>
-      <TEST INDEX="31" NAME="App manifest" DESCRIPTION="App manifest must include valid entries for all required fields." EXECUTIONTIME="00h:00m:01s.58ms" OPTIONAL="FALSE">
-        <MESSAGES />
-        <RESULT><![CDATA[PASS]]></RESULT>
-      </TEST>
-      <TEST INDEX="87" NAME="File association verbs" DESCRIPTION="Registry validation that no registered file association verbs are installed." EXECUTIONTIME="00h:00m:01s.13ms" OPTIONAL="TRUE">
-        <MESSAGES />
-        <RESULT><![CDATA[PASS]]></RESULT>
-      </TEST>
-      <TEST INDEX="86" NAME="Registry checks" DESCRIPTION="Registry validation that drivers are not installed and NT Services are not installed." EXECUTIONTIME="00h:00m:00s.98ms" OPTIONAL="TRUE">
-        <MESSAGES />
-        <RESULT><![CDATA[PASS]]></RESULT>
-      </TEST>
-      <TEST INDEX="91" NAME="Enterprise Features" DESCRIPTION="Check if any enterprise-only features are in the package." EXECUTIONTIME="00h:00m:01s.02ms" OPTIONAL="FALSE">
-        <MESSAGES />
-        <RESULT><![CDATA[PASS]]></RESULT>
-      </TEST>
-      <TEST INDEX="90" NAME="Resource Packages" DESCRIPTION="Check if any resource packages contain PE files." EXECUTIONTIME="00h:00m:00s.99ms" OPTIONAL="FALSE">
-        <MESSAGES />
-        <RESULT><![CDATA[PASS]]></RESULT>
-      </TEST>
-    </REQUIREMENT>
-    <REQUIREMENT NUMBER="14" TITLE="Windows security features test" RATIONALE="Applications must opt-into Windows security features.">
-      <TEST INDEX="70" NAME="Banned file analyzer" DESCRIPTION="Analysis of application to detect known insecure files" EXECUTIONTIME="00h:00m:01s.13ms" OPTIONAL="FALSE">
-        <MESSAGES />
-        <RESULT><![CDATA[PASS]]></RESULT>
-      </TEST>
-      <TEST INDEX="62" NAME="Private code signing" DESCRIPTION="App should not package private code signing key files." EXECUTIONTIME="00h:00m:01s.22ms" OPTIONAL="FALSE">
-        <MESSAGES />
-        <RESULT><![CDATA[PASS]]></RESULT>
-      </TEST>
-    </REQUIREMENT>
-    <REQUIREMENT NUMBER="19" TITLE="App manifest resources tests" RATIONALE="The App Package Manifest should have valid resources defined in the resources.pri file, as per the App Packaging Specification and App Manifest Schema.">
-      <TEST INDEX="45" NAME="App resources" DESCRIPTION="The package should have valid resources defined in the resources.pri file." EXECUTIONTIME="00h:00m:00s.75ms" OPTIONAL="TRUE">
-        <MESSAGES />
-        <RESULT><![CDATA[PASS]]></RESULT>
-      </TEST>
-      <TEST INDEX="61" NAME="Branding" DESCRIPTION="App should not use the default images packed by windows SDK samples or Visual Studio." EXECUTIONTIME="00h:00m:01s.94ms" OPTIONAL="FALSE">
-        <MESSAGES />
-        <RESULT><![CDATA[PASS]]></RESULT>
-      </TEST>
-    </REQUIREMENT>
-    <REQUIREMENT NUMBER="20" TITLE="Debug configuration test" RATIONALE="The App should not install any debug binaries.">
-      <TEST INDEX="46" NAME="Debug configuration" DESCRIPTION="The App should not install any debug binaries." EXECUTIONTIME="00h:00m:01s.60ms" OPTIONAL="TRUE">
-        <MESSAGES />
-        <RESULT><![CDATA[PASS]]></RESULT>
-      </TEST>
-    </REQUIREMENT>
     <REQUIREMENT NUMBER="23" TITLE="App Capabilities test" RATIONALE="Packages declaring special-use capabilities will have to provide justifications during the onboarding process.">
-      <TEST INDEX="52" NAME="Special use capabilities" DESCRIPTION="Packages declaring special-use capabilities will have to provide justifications during the onboarding process." EXECUTIONTIME="00h:00m:01s.08ms" OPTIONAL="FALSE">
+      <TEST INDEX="52" NAME="Special use capabilities" DESCRIPTION="Packages declaring special-use capabilities will have to provide justifications during the onboarding process." EXECUTIONTIME="00h:00m:01s.01ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
-      </TEST>
-    </REQUIREMENT>
-    <REQUIREMENT NUMBER="24" TITLE="Windows Runtime metadata validation" RATIONALE="Metadata needs to be conformant and consistent across all generation sources.">
-      <TEST INDEX="56" NAME="ExclusiveTo attribute" DESCRIPTION="A class must not implement an interface that is marked ExclusiveTo another class." EXECUTIONTIME="00h:00m:09s.21ms" OPTIONAL="FALSE">
-        <MESSAGES />
-        <RESULT><![CDATA[PASS]]></RESULT>
-      </TEST>
-      <TEST INDEX="57" NAME="Type location" DESCRIPTION="Types must be defined in the metadata file with the longest matching namespace." EXECUTIONTIME="00h:00m:00s.80ms" OPTIONAL="FALSE">
-        <MESSAGES />
-        <RESULT><![CDATA[PASS]]></RESULT>
-      </TEST>
-      <TEST INDEX="55" NAME="Type name case-sensitivity" DESCRIPTION="Namespace and type names must not vary only by casing." EXECUTIONTIME="00h:00m:00s.76ms" OPTIONAL="FALSE">
-        <MESSAGES />
-        <RESULT><![CDATA[PASS]]></RESULT>
-      </TEST>
-      <TEST INDEX="54" NAME="Type name correctness" DESCRIPTION="Only system types can be in the Windows namespace and no types can be in the global namespace." EXECUTIONTIME="00h:00m:00s.76ms" OPTIONAL="FALSE">
-        <MESSAGES />
-        <RESULT><![CDATA[PASS]]></RESULT>
-      </TEST>
-      <TEST INDEX="58" NAME="General metadata correctness" DESCRIPTION="Metadata files must meet various requirements in order to be valid and correct." EXECUTIONTIME="00h:00m:08s.39ms" OPTIONAL="TRUE">
-        <MESSAGES />
-        <RESULT><![CDATA[PASS]]></RESULT>
-      </TEST>
-      <TEST INDEX="53" NAME="Properties" DESCRIPTION="Write-only and indexer properties may not be used. Corresponding getter and setter methods must match in type." EXECUTIONTIME="00h:00m:00s.70ms" OPTIONAL="FALSE">
-        <MESSAGES />
-        <RESULT><![CDATA[PASS]]></RESULT>
-      </TEST>
-    </REQUIREMENT>
-    <REQUIREMENT NUMBER="25" TITLE="Package sanity test" RATIONALE="Validation of the app package contents to ensure correctness.">
-      <TEST INDEX="89" NAME="Archive files usage" DESCRIPTION="Packages should not contain PE files inside archive files." EXECUTIONTIME="00h:00m:01s.20ms" OPTIONAL="TRUE">
-        <MESSAGES />
-        <RESULT><![CDATA[PASS]]></RESULT>
-      </TEST>
-      <TEST INDEX="88" NAME="Blocked executables" DESCRIPTION="Detects if there are references to process launch APIs and blocked executables" EXECUTIONTIME="00h:00m:01s.49ms" OPTIONAL="TRUE">
-        <MESSAGES />
-        <RESULT><![CDATA[PASS]]></RESULT>
-      </TEST>
-      <TEST INDEX="63" NAME="Platform appropriate files" DESCRIPTION="App should not install files that do not match the target processor architecture." EXECUTIONTIME="00h:00m:01s.37ms" OPTIONAL="TRUE">
-        <MESSAGES />
-        <RESULT><![CDATA[PASS]]></RESULT>
-      </TEST>
-    </REQUIREMENT>
-    <REQUIREMENT NUMBER="26" TITLE="High-DPI support" RATIONALE="The application needs to set DPI-aware to make the UI look consistently good across a wide variety of high-DPI display settings.">
-      <TEST INDEX="92" NAME="DPIAwarenessValidation" DESCRIPTION="Applications should set DPI-aware to make its UI look consistently good across a wide variety of high-DPI display settings." EXECUTIONTIME="00h:00m:01s.49ms" OPTIONAL="FALSE">
-        <MESSAGES>
-          <MESSAGE TEXT="File 202020\202020.exe neither has PerMonitorV2 manifested in the manifest nor calls into DPI Awareness APIs for ex: user32!SetProcessDpiAwarenessContext or user32!SetThreadDpiAwarenessContext." />
-          <MESSAGE TEXT="The app 44686MichaelChen.202020_1.0.34.0_neutral__1xnyq3bbv8tvj is not DPI Aware." />
-        </MESSAGES>
-        <RESULT><![CDATA[WARNING]]></RESULT>
       </TEST>
     </REQUIREMENT>
   </REQUIREMENTS>
   <APPLICATIONS>
     <Installed_Programs>
-      <Program Name="44686MichaelChen.202020" Type="Application" Source="AppxPackage" Publisher="CN=DDC0C21D-A155-41EB-9AE3-EB7012BDF7F1" Version="1.0.34.0" Language="1033" InstallDate="" OSVersionAtInstallTime="10.0.0.19043" RootDirPath="C:\Windows\temp\appcert_5754\44686MichaelChen.202020_1.0.34.0_neutral__1xnyq3bbv8tvj" Id="00003c0322be23933cde3367f49258cf582a00000904" HiddenArp="false">
+      <Program Name="44686MichaelChen.202020" Type="Application" Source="AppxPackage" Publisher="CN=DDC0C21D-A155-41EB-9AE3-EB7012BDF7F1" Version="1.1.2.0" Language="1033" InstallDate="" OSVersionAtInstallTime="10.0.0.19043" RootDirPath="C:\Windows\temp\appcert_2178\44686MichaelChen.202020_1.1.2.0_neutral__1xnyq3bbv8tvj" Id="0000768216c1a5b0cb1dd6acf6fc9a436a5500000904" HiddenArp="false">
         <Indicators>
           <WindowsStoreAppManifestIndicators>
-            <PackageManifest PackageFullName="44686MichaelChen.202020_1.0.34.0_neutral__1xnyq3bbv8tvj">
+            <PackageManifest PackageFullName="44686MichaelChen.202020_1.1.2.0_neutral__1xnyq3bbv8tvj">
               <Package>
-                <Identity Name="44686MichaelChen.202020" Publisher="CN=DDC0C21D-A155-41EB-9AE3-EB7012BDF7F1" Version="1.0.34.0" ProcessorArchitecture="neutral"></Identity>
+                <Identity Name="44686MichaelChen.202020" Publisher="CN=DDC0C21D-A155-41EB-9AE3-EB7012BDF7F1" Version="1.1.2.0" ProcessorArchitecture="neutral"></Identity>
                 <Properties>
                   <DisplayName>202020</DisplayName>
                   <PublisherDisplayName>Michael Chen</PublisherDisplayName>
@@ -165,9 +52,9 @@
             </PackageManifest>
             <BundleManifest PackageFamilyName="44686MichaelChen.202020_1xnyq3bbv8tvj">
               <Bundle SchemaVersion="4.0">
-                <Identity Name="44686MichaelChen.202020" Publisher="CN=DDC0C21D-A155-41EB-9AE3-EB7012BDF7F1" Version="1.0.34.0"></Identity>
+                <Identity Name="44686MichaelChen.202020" Publisher="CN=DDC0C21D-A155-41EB-9AE3-EB7012BDF7F1" Version="1.1.2.0"></Identity>
                 <Packages>
-                  <Package Type="application" Version="1.0.34.0" Architecture="neutral" FileName="202020 Installer_1.0.34.0_AnyCPU.appx" Offset="69" Size="1665058">
+                  <Package Type="application" Version="1.1.2.0" Architecture="neutral" FileName="202020 Installer_1.1.2.0_AnyCPU.appx" Offset="68" Size="1666298">
                     <Resources>
                       <Resource Language="EN-US"></Resource>
                       <Resource Scale="200"></Resource>
@@ -177,7 +64,7 @@
                       <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.17134.0" MaxVersionTested="10.0.18362.0"></TargetDeviceFamily>
                     </Dependencies>
                   </Package>
-                  <Package Type="resource" Version="1.0.34.0" ResourceId="split.scale-100" FileName="202020 Installer_1.0.34.0_scale-100.appx" Offset="1665223" Size="50905" Architecture="neutral">
+                  <Package Type="resource" Version="1.1.2.0" ResourceId="split.scale-100" FileName="202020 Installer_1.1.2.0_scale-100.appx" Offset="1666461" Size="50909" Architecture="neutral">
                     <Resources>
                       <Resource Scale="100"></Resource>
                     </Resources>
@@ -186,7 +73,7 @@
                       <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.17134.0" MaxVersionTested="10.0.18362.0"></TargetDeviceFamily>
                     </Dependencies>
                   </Package>
-                  <Package Type="resource" Version="1.0.34.0" ResourceId="split.scale-125" FileName="202020 Installer_1.0.34.0_scale-125.appx" Offset="1716224" Size="65512" Architecture="neutral">
+                  <Package Type="resource" Version="1.1.2.0" ResourceId="split.scale-125" FileName="202020 Installer_1.1.2.0_scale-125.appx" Offset="1717465" Size="65511" Architecture="neutral">
                     <Resources>
                       <Resource Scale="125"></Resource>
                     </Resources>
@@ -195,7 +82,7 @@
                       <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.17134.0" MaxVersionTested="10.0.18362.0"></TargetDeviceFamily>
                     </Dependencies>
                   </Package>
-                  <Package Type="resource" Version="1.0.34.0" ResourceId="split.scale-150" FileName="202020 Installer_1.0.34.0_scale-150.appx" Offset="1781832" Size="81398" Architecture="neutral">
+                  <Package Type="resource" Version="1.1.2.0" ResourceId="split.scale-150" FileName="202020 Installer_1.1.2.0_scale-150.appx" Offset="1783071" Size="81396" Architecture="neutral">
                     <Resources>
                       <Resource Scale="150"></Resource>
                     </Resources>
@@ -204,7 +91,7 @@
                       <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.17134.0" MaxVersionTested="10.0.18362.0"></TargetDeviceFamily>
                     </Dependencies>
                   </Package>
-                  <Package Type="resource" Version="1.0.34.0" ResourceId="split.scale-400" FileName="202020 Installer_1.0.34.0_scale-400.appx" Offset="1863326" Size="297799" Architecture="neutral">
+                  <Package Type="resource" Version="1.1.2.0" ResourceId="split.scale-400" FileName="202020 Installer_1.1.2.0_scale-400.appx" Offset="1864562" Size="297794" Architecture="neutral">
                     <Resources>
                       <Resource Scale="400"></Resource>
                     </Resources>
@@ -220,266 +107,12 @@
         </Indicators>
         <StaticProperties>
           <Files Id="">
-            <File Id="0000148a82e9f1c48194220ac25967aa4a3c2651adef" Name="202020.exe" ProductName="202020" CompanyName="" ProductVersion="1.0.0.0" VerLanguage="0" SwitchBackContext="0" FileVersion="1.0.0.0" Size="860160" SizeOfImage="860160" PeHeaderHash="0101c18f0e1c3e6a1bd69f8ce74936f0edea1f26fa66" PeChecksum="0" CrcChecksum="-1711034078" BinProductVersion="1.0.0.0" BinFileVersion="1.0.0.0" FileDescription="202020" LegalCopyright="copyright ©  2020" LinkDate="04/13/2059 17:13:31" BinaryType="pe32_clr_il_prefer32" LowerCaseLongPath="c:\windows\temp\appcert_5754\44686michaelchen.202020_1.0.34.0_neutral__1xnyq3bbv8tvj\202020\202020.exe" />
-            <File Id="00009d25ba200530efaef00cfb53d2ac609f95b13172" Name="resources.pri" ProductName="" CompanyName="" ProductVersion="" VerLanguage="0" SwitchBackContext="0" FileVersion="" Size="0" SizeOfImage="0" PeHeaderHash="" PeChecksum="0" CrcChecksum="1525009373" BinProductVersion="" BinFileVersion="" FileDescription="" LegalCopyright="" LinkDate="" BinaryType="data_only" LowerCaseLongPath="c:\windows\temp\appcert_5754\44686michaelchen.202020_1.0.34.0_neutral__1xnyq3bbv8tvj\resources.pri" />
+            <File Id="00008b364e8fc0efdcbd7d8b7301ad22dfa05be1d018" Name="202020.exe" ProductName="202020" CompanyName="" ProductVersion="1.0.0.0" VerLanguage="0" SwitchBackContext="0" FileVersion="1.0.0.0" Size="860160" SizeOfImage="860160" PeHeaderHash="0101823fd427c966235a2f29c8e806ddec16169dc7a2" PeChecksum="0" CrcChecksum="-1048446190" BinProductVersion="1.0.0.0" BinFileVersion="1.0.0.0" FileDescription="202020" LegalCopyright="copyright ©  2020" LinkDate="10/26/2059 23:34:52" BinaryType="pe32_clr_il_prefer32" LowerCaseLongPath="c:\windows\temp\appcert_2178\44686michaelchen.202020_1.1.2.0_neutral__1xnyq3bbv8tvj\202020\202020.exe" />
+            <File Id="00009d25ba200530efaef00cfb53d2ac609f95b13172" Name="resources.pri" ProductName="" CompanyName="" ProductVersion="" VerLanguage="0" SwitchBackContext="0" FileVersion="" Size="0" SizeOfImage="0" PeHeaderHash="" PeChecksum="0" CrcChecksum="1525009373" BinProductVersion="" BinFileVersion="" FileDescription="" LegalCopyright="" LinkDate="" BinaryType="data_only" LowerCaseLongPath="c:\windows\temp\appcert_2178\44686michaelchen.202020_1.1.2.0_neutral__1xnyq3bbv8tvj\resources.pri" />
           </Files>
         </StaticProperties>
       </Program>
     </Installed_Programs>
   </APPLICATIONS>
-  <DEPENDENCY_INFORMATION>
-    <AitStaticAnalysis ProgramId="0000da39a3ee5e6b4b0d3255bfef95601890afd80709" AnalysisVersion="1.70" DictionaryVersion="3.6" Type="Max" Id="C:\Windows\temp\appcert_5754\44686MichaelChen.202020_1.0.34.0_neutral__1xnyq3bbv8tvj">
-      <AitFile FrameworkMoniker=".NETFramework,Version=v4.7.2" ErrorCode="0" Name="202020.exe" Id="0000148a82e9f1c48194220ac25967aa4a3c2651adef">
-        <AitCategory Id="Com">
-          <AitFeature Name="{00000000-0000-0000-0000-000000000001}" />
-          <AitFeature Name="{00000000-0000-0000-0000-000000000014}" />
-        </AitCategory>
-        <AitCategory Id="DotNetApi">
-          <AitFeature Name="user32.dll!RegisterHotKey" />
-          <AitFeature Name="user32.dll!UnregisterHotKey" />
-        </AitCategory>
-        <AitCategory Id="ApiStatic">
-          <AitFeature Name="mscoree.dll!_CorExeMain" />
-        </AitCategory>
-        <AitCategory Id="DotNet">
-          <AitFeature Name="System.Activator" />
-          <AitFeature Name="System.Activator.CreateInstance" />
-          <AitFeature Name="System.Boolean" />
-          <AitFeature Name="System.CodeDom.Compiler.GeneratedCodeAttribute" />
-          <AitFeature Name="System.CodeDom.Compiler.GeneratedCodeAttribute..ctor" />
-          <AitFeature Name="System.Collections.IDictionary" />
-          <AitFeature Name="System.Collections.IDictionary.get_Item" />
-          <AitFeature Name="System.Collections.IDictionary.set_Item" />
-          <AitFeature Name="System.Collections.IEnumerator" />
-          <AitFeature Name="System.Collections.IEnumerator.MoveNext" />
-          <AitFeature Name="System.Collections.IEnumerator.get_Current" />
-          <AitFeature Name="System.ComponentModel.CancelEventArgs" />
-          <AitFeature Name="System.ComponentModel.EditorBrowsableAttribute" />
-          <AitFeature Name="System.ComponentModel.EditorBrowsableAttribute..ctor" />
-          <AitFeature Name="System.ComponentModel.EditorBrowsableState" />
-          <AitFeature Name="System.Configuration.ApplicationSettingsBase" />
-          <AitFeature Name="System.Configuration.ApplicationSettingsBase..ctor" />
-          <AitFeature Name="System.Configuration.DefaultSettingValueAttribute" />
-          <AitFeature Name="System.Configuration.DefaultSettingValueAttribute..ctor" />
-          <AitFeature Name="System.Configuration.SettingsBase" />
-          <AitFeature Name="System.Configuration.SettingsBase.Save" />
-          <AitFeature Name="System.Configuration.SettingsBase.Synchronized" />
-          <AitFeature Name="System.Configuration.SettingsBase.get_Item" />
-          <AitFeature Name="System.Configuration.SettingsBase.set_Item" />
-          <AitFeature Name="System.Configuration.UserScopedSettingAttribute" />
-          <AitFeature Name="System.Configuration.UserScopedSettingAttribute..ctor" />
-          <AitFeature Name="System.Delegate" />
-          <AitFeature Name="System.Diagnostics.DebuggableAttribute" />
-          <AitFeature Name="System.Diagnostics.DebuggableAttribute..ctor" />
-          <AitFeature Name="System.Diagnostics.DebuggerNonUserCodeAttribute" />
-          <AitFeature Name="System.Diagnostics.DebuggerNonUserCodeAttribute..ctor" />
-          <AitFeature Name="System.Drawing.Icon" />
-          <AitFeature Name="System.Drawing.Icon..ctor" />
-          <AitFeature Name="System.EventArgs" />
-          <AitFeature Name="System.EventHandler" />
-          <AitFeature Name="System.EventHandler..ctor" />
-          <AitFeature Name="System.EventHandler`1" />
-          <AitFeature Name="System.Globalization.CultureInfo" />
-          <AitFeature Name="System.IDisposable" />
-          <AitFeature Name="System.IDisposable.Dispose" />
-          <AitFeature Name="System.IO.File" />
-          <AitFeature Name="System.IO.File.Create" />
-          <AitFeature Name="System.IO.FileStream" />
-          <AitFeature Name="System.IO.Path" />
-          <AitFeature Name="System.IO.Path.Combine" />
-          <AitFeature Name="System.IO.Path.GetTempPath" />
-          <AitFeature Name="System.IO.Stream" />
-          <AitFeature Name="System.IO.Stream.CopyTo" />
-          <AitFeature Name="System.IO.UnmanagedMemoryStream" />
-          <AitFeature Name="System.Int32" />
-          <AitFeature Name="System.Int32.Parse" />
-          <AitFeature Name="System.Int32.ToString" />
-          <AitFeature Name="System.Int32.TryParse" />
-          <AitFeature Name="System.IntPtr" />
-          <AitFeature Name="System.IntPtr.ToInt32" />
-          <AitFeature Name="System.IntPtr.Zero" />
-          <AitFeature Name="System.Nullable`1" />
-          <AitFeature Name="System.Object" />
-          <AitFeature Name="System.Object..ctor" />
-          <AitFeature Name="System.Object.Equals" />
-          <AitFeature Name="System.Object.GetType" />
-          <AitFeature Name="System.Object.ToString" />
-          <AitFeature Name="System.Reflection.Assembly" />
-          <AitFeature Name="System.Reflection.Assembly.GetExecutingAssembly" />
-          <AitFeature Name="System.Reflection.Assembly.GetManifestResourceStream" />
-          <AitFeature Name="System.Reflection.AssemblyCompanyAttribute" />
-          <AitFeature Name="System.Reflection.AssemblyCompanyAttribute..ctor" />
-          <AitFeature Name="System.Reflection.AssemblyConfigurationAttribute" />
-          <AitFeature Name="System.Reflection.AssemblyConfigurationAttribute..ctor" />
-          <AitFeature Name="System.Reflection.AssemblyCopyrightAttribute" />
-          <AitFeature Name="System.Reflection.AssemblyCopyrightAttribute..ctor" />
-          <AitFeature Name="System.Reflection.AssemblyDescriptionAttribute" />
-          <AitFeature Name="System.Reflection.AssemblyDescriptionAttribute..ctor" />
-          <AitFeature Name="System.Reflection.AssemblyFileVersionAttribute" />
-          <AitFeature Name="System.Reflection.AssemblyFileVersionAttribute..ctor" />
-          <AitFeature Name="System.Reflection.AssemblyProductAttribute" />
-          <AitFeature Name="System.Reflection.AssemblyProductAttribute..ctor" />
-          <AitFeature Name="System.Reflection.AssemblyTitleAttribute" />
-          <AitFeature Name="System.Reflection.AssemblyTitleAttribute..ctor" />
-          <AitFeature Name="System.Reflection.AssemblyTrademarkAttribute" />
-          <AitFeature Name="System.Reflection.AssemblyTrademarkAttribute..ctor" />
-          <AitFeature Name="System.Reflection.Binder" />
-          <AitFeature Name="System.Reflection.BindingFlags" />
-          <AitFeature Name="System.Reflection.EventInfo" />
-          <AitFeature Name="System.Reflection.EventInfo.AddEventHandler" />
-          <AitFeature Name="System.Reflection.PropertyInfo" />
-          <AitFeature Name="System.Reflection.PropertyInfo.GetValue" />
-          <AitFeature Name="System.Reflection.PropertyInfo.SetValue" />
-          <AitFeature Name="System.Resources.ResourceManager" />
-          <AitFeature Name="System.Resources.ResourceManager..ctor" />
-          <AitFeature Name="System.Resources.ResourceManager.GetObject" />
-          <AitFeature Name="System.Resources.ResourceManager.GetStream" />
-          <AitFeature Name="System.Runtime.CompilerServices.CompilationRelaxationsAttribute" />
-          <AitFeature Name="System.Runtime.CompilerServices.CompilationRelaxationsAttribute..ctor" />
-          <AitFeature Name="System.Runtime.CompilerServices.CompilerGeneratedAttribute" />
-          <AitFeature Name="System.Runtime.CompilerServices.CompilerGeneratedAttribute..ctor" />
-          <AitFeature Name="System.Runtime.CompilerServices.RuntimeCompatibilityAttribute" />
-          <AitFeature Name="System.Runtime.CompilerServices.RuntimeCompatibilityAttribute..ctor" />
-          <AitFeature Name="System.Runtime.InteropServices.ComVisibleAttribute" />
-          <AitFeature Name="System.Runtime.InteropServices.ComVisibleAttribute..ctor" />
-          <AitFeature Name="System.Runtime.Versioning.TargetFrameworkAttribute" />
-          <AitFeature Name="System.Runtime.Versioning.TargetFrameworkAttribute..ctor" />
-          <AitFeature Name="System.RuntimeTypeHandle" />
-          <AitFeature Name="System.STAThreadAttribute" />
-          <AitFeature Name="System.STAThreadAttribute..ctor" />
-          <AitFeature Name="System.String" />
-          <AitFeature Name="System.String.Concat" />
-          <AitFeature Name="System.TimeSpan" />
-          <AitFeature Name="System.TimeSpan..ctor" />
-          <AitFeature Name="System.TimeSpan.FromSeconds" />
-          <AitFeature Name="System.TimeSpan.Subtract" />
-          <AitFeature Name="System.TimeSpan.get_Hours" />
-          <AitFeature Name="System.TimeSpan.get_Minutes" />
-          <AitFeature Name="System.TimeSpan.get_Seconds" />
-          <AitFeature Name="System.TimeSpan.get_TotalSeconds" />
-          <AitFeature Name="System.Type" />
-          <AitFeature Name="System.Type.GetTypeFromHandle" />
-          <AitFeature Name="System.Type.InvokeMember" />
-          <AitFeature Name="System.Type.get_Assembly" />
-          <AitFeature Name="System.Type.op_Equality" />
-          <AitFeature Name="System.Uri" />
-          <AitFeature Name="System.Uri..ctor" />
-          <AitFeature Name="System.UriKind" />
-          <AitFeature Name="System.Windows.Application" />
-          <AitFeature Name="System.Windows.Application..ctor" />
-          <AitFeature Name="System.Windows.Application.GetResourceStream" />
-          <AitFeature Name="System.Windows.Application.LoadComponent" />
-          <AitFeature Name="System.Windows.Application.Run" />
-          <AitFeature Name="System.Windows.Application.add_Exit" />
-          <AitFeature Name="System.Windows.Application.add_Startup" />
-          <AitFeature Name="System.Windows.Application.get_Current" />
-          <AitFeature Name="System.Windows.Application.get_Properties" />
-          <AitFeature Name="System.Windows.Application.get_Windows" />
-          <AitFeature Name="System.Windows.Application.set_StartupUri" />
-          <AitFeature Name="System.Windows.Controls.Button" />
-          <AitFeature Name="System.Windows.Controls.CheckBox" />
-          <AitFeature Name="System.Windows.Controls.Image" />
-          <AitFeature Name="System.Windows.Controls.Image.set_Source" />
-          <AitFeature Name="System.Windows.Controls.Primitives.ButtonBase" />
-          <AitFeature Name="System.Windows.Controls.Primitives.ButtonBase.add_Click" />
-          <AitFeature Name="System.Windows.Controls.Primitives.ToggleButton" />
-          <AitFeature Name="System.Windows.Controls.Primitives.ToggleButton.get_IsChecked" />
-          <AitFeature Name="System.Windows.Controls.Primitives.ToggleButton.set_IsChecked" />
-          <AitFeature Name="System.Windows.Controls.TextBlock" />
-          <AitFeature Name="System.Windows.Controls.TextBlock.set_Foreground" />
-          <AitFeature Name="System.Windows.Controls.TextBlock.set_Text" />
-          <AitFeature Name="System.Windows.Controls.TextBox" />
-          <AitFeature Name="System.Windows.Controls.TextBox.get_Text" />
-          <AitFeature Name="System.Windows.Controls.TextBox.set_Text" />
-          <AitFeature Name="System.Windows.Data.IValueConverter" />
-          <AitFeature Name="System.Windows.ExitEventArgs" />
-          <AitFeature Name="System.Windows.ExitEventHandler" />
-          <AitFeature Name="System.Windows.ExitEventHandler..ctor" />
-          <AitFeature Name="System.Windows.Forms.MouseEventHandler" />
-          <AitFeature Name="System.Windows.Forms.MouseEventHandler..ctor" />
-          <AitFeature Name="System.Windows.Forms.NotifyIcon" />
-          <AitFeature Name="System.Windows.Forms.NotifyIcon..ctor" />
-          <AitFeature Name="System.Windows.Forms.NotifyIcon.add_MouseClick" />
-          <AitFeature Name="System.Windows.Forms.NotifyIcon.set_Icon" />
-          <AitFeature Name="System.Windows.Forms.NotifyIcon.set_Text" />
-          <AitFeature Name="System.Windows.Forms.NotifyIcon.set_Visible" />
-          <AitFeature Name="System.Windows.FrameworkElement" />
-          <AitFeature Name="System.Windows.FrameworkElement.set_Height" />
-          <AitFeature Name="System.Windows.FrameworkElement.set_Width" />
-          <AitFeature Name="System.Windows.Interop.HwndSource" />
-          <AitFeature Name="System.Windows.Interop.HwndSource.AddHook" />
-          <AitFeature Name="System.Windows.Interop.HwndSource.FromHwnd" />
-          <AitFeature Name="System.Windows.Interop.HwndSourceHook" />
-          <AitFeature Name="System.Windows.Interop.HwndSourceHook..ctor" />
-          <AitFeature Name="System.Windows.Interop.WindowInteropHelper" />
-          <AitFeature Name="System.Windows.Interop.WindowInteropHelper..ctor" />
-          <AitFeature Name="System.Windows.Interop.WindowInteropHelper.get_Handle" />
-          <AitFeature Name="System.Windows.Markup.IComponentConnector" />
-          <AitFeature Name="System.Windows.Markup.IComponentConnector.Connect" />
-          <AitFeature Name="System.Windows.Markup.InternalTypeHelper" />
-          <AitFeature Name="System.Windows.Markup.InternalTypeHelper..ctor" />
-          <AitFeature Name="System.Windows.Media.Brush" />
-          <AitFeature Name="System.Windows.Media.Brushes" />
-          <AitFeature Name="System.Windows.Media.Brushes.get_Black" />
-          <AitFeature Name="System.Windows.Media.Brushes.get_White" />
-          <AitFeature Name="System.Windows.Media.ExceptionEventArgs" />
-          <AitFeature Name="System.Windows.Media.ImageSource" />
-          <AitFeature Name="System.Windows.Media.Imaging.BitmapImage" />
-          <AitFeature Name="System.Windows.Media.Imaging.BitmapImage..ctor" />
-          <AitFeature Name="System.Windows.Media.MediaPlayer" />
-          <AitFeature Name="System.Windows.Media.MediaPlayer..ctor" />
-          <AitFeature Name="System.Windows.Media.MediaPlayer.Open" />
-          <AitFeature Name="System.Windows.Media.MediaPlayer.Play" />
-          <AitFeature Name="System.Windows.Media.MediaPlayer.add_MediaFailed" />
-          <AitFeature Name="System.Windows.Media.MediaPlayer.set_Position" />
-          <AitFeature Name="System.Windows.Media.MediaPlayer.set_Volume" />
-          <AitFeature Name="System.Windows.Media.SolidColorBrush" />
-          <AitFeature Name="System.Windows.MessageBox" />
-          <AitFeature Name="System.Windows.MessageBox.Show" />
-          <AitFeature Name="System.Windows.MessageBoxResult" />
-          <AitFeature Name="System.Windows.ResourceDictionaryLocation" />
-          <AitFeature Name="System.Windows.Resources.StreamResourceInfo" />
-          <AitFeature Name="System.Windows.Resources.StreamResourceInfo.get_Stream" />
-          <AitFeature Name="System.Windows.RoutedEventArgs" />
-          <AitFeature Name="System.Windows.RoutedEventHandler" />
-          <AitFeature Name="System.Windows.RoutedEventHandler..ctor" />
-          <AitFeature Name="System.Windows.StartupEventArgs" />
-          <AitFeature Name="System.Windows.StartupEventHandler" />
-          <AitFeature Name="System.Windows.StartupEventHandler..ctor" />
-          <AitFeature Name="System.Windows.ThemeInfoAttribute" />
-          <AitFeature Name="System.Windows.ThemeInfoAttribute..ctor" />
-          <AitFeature Name="System.Windows.Threading.DispatcherPriority" />
-          <AitFeature Name="System.Windows.Threading.DispatcherTimer" />
-          <AitFeature Name="System.Windows.Threading.DispatcherTimer..ctor" />
-          <AitFeature Name="System.Windows.Threading.DispatcherTimer.Start" />
-          <AitFeature Name="System.Windows.Threading.DispatcherTimer.Stop" />
-          <AitFeature Name="System.Windows.Threading.DispatcherTimer.add_Tick" />
-          <AitFeature Name="System.Windows.Threading.DispatcherTimer.get_IsEnabled" />
-          <AitFeature Name="System.Windows.Threading.DispatcherTimer.set_Interval" />
-          <AitFeature Name="System.Windows.Threading.DispatcherTimer.set_IsEnabled" />
-          <AitFeature Name="System.Windows.Window" />
-          <AitFeature Name="System.Windows.Window..ctor" />
-          <AitFeature Name="System.Windows.Window.Activate" />
-          <AitFeature Name="System.Windows.Window.Close" />
-          <AitFeature Name="System.Windows.Window.Hide" />
-          <AitFeature Name="System.Windows.Window.OnClosing" />
-          <AitFeature Name="System.Windows.Window.OnSourceInitialized" />
-          <AitFeature Name="System.Windows.Window.Show" />
-          <AitFeature Name="System.Windows.Window.add_StateChanged" />
-          <AitFeature Name="System.Windows.Window.get_Title" />
-          <AitFeature Name="System.Windows.Window.get_WindowState" />
-          <AitFeature Name="System.Windows.Window.set_Left" />
-          <AitFeature Name="System.Windows.Window.set_Owner" />
-          <AitFeature Name="System.Windows.Window.set_ShowInTaskbar" />
-          <AitFeature Name="System.Windows.Window.set_Top" />
-          <AitFeature Name="System.Windows.Window.set_WindowState" />
-          <AitFeature Name="System.Windows.Window.set_WindowStyle" />
-          <AitFeature Name="System.Windows.WindowCollection" />
-          <AitFeature Name="System.Windows.WindowCollection.GetEnumerator" />
-          <AitFeature Name="System.Windows.WindowState" />
-          <AitFeature Name="System.Windows.WindowStyle" />
-        </AitCategory>
-      </AitFile>
-    </AitStaticAnalysis>
-  </DEPENDENCY_INFORMATION>
+  <DEPENDENCY_INFORMATION />
 </REPORT>

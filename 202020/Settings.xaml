@@ -203,7 +203,7 @@
                 <CheckBox Grid.Row="3" Margin="4 0 0 0" BorderBrush="Black" VerticalContentAlignment="Center" Name="FastFowardShortcut"
                           ToolTip="If sounds are enabled, they will play after Fast Forward keyboard shortcut"
                             IsChecked="{Binding Source={x:Static properties:Settings.Default}, Path=FastForwardShortcut}">
-                    <TextBlock TextAlignment="Left" FontSize="12.5" Text="Fast forward (Win + Left Alt + Right Arrow)"/>
+                    <TextBlock TextAlignment="Left" FontSize="12.5" Text="Fast forward (Win + Left Alt + X)"/>
                 </CheckBox>
             </Grid>
         </Border>

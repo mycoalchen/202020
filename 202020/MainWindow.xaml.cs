@@ -36,7 +36,7 @@ namespace _202020
         private const uint MOD_WIN = 0x0008;
         private const int PLAYPAUSE_ID = 9000;
         private const int FASTFORWARD_ID = 9001;
-        private const int KEY_RIGHT = 0x27;
+        private const int KEY_X = 0x58;
         private const int KEY_SPACE = 0x20;
 
         private IntPtr HwndHook(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
@@ -116,7 +116,7 @@ namespace _202020
             if (Properties.Settings.Default.PlayPauseShortcut)
                 RegisterHotKey(handle, PLAYPAUSE_ID, MOD_ALT | MOD_WIN, KEY_SPACE);
             if (Properties.Settings.Default.FastForwardShortcut)
-                RegisterHotKey(handle, FASTFORWARD_ID, MOD_ALT | MOD_WIN, KEY_RIGHT);
+                RegisterHotKey(handle, FASTFORWARD_ID, MOD_ALT | MOD_WIN, KEY_X);
 
         }
         #endregion
