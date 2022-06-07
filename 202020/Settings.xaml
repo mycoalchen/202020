@@ -9,26 +9,28 @@
         ResizeMode="CanMinimize"
         ShowInTaskbar="True"
         Icon="Media/SettingsIcon.ico"
-        Title="Settings" Height="750" Width="300">
+        Title="Settings" Height="600" Width="350">
     <Window.Resources>
         <local:TwoDigit x:Key="TwoDigit"/>
     </Window.Resources>
     <ScrollViewer VerticalScrollBarVisibility="Auto">
         <Grid Background="{StaticResource BackgroundBrush}">
             <Grid.RowDefinitions>
-                <RowDefinition Height="19*"/>
-                <RowDefinition Height="8*"/>
-                <RowDefinition Height="52*"/>
-                <RowDefinition Height="8*"/>
-                <RowDefinition Height="52*"/>
-                <RowDefinition Height="8*"/>
-                <RowDefinition Height="86*"/>
-                <RowDefinition Height="8*"/>
-                <RowDefinition Height="50*"/>
-                <RowDefinition Height="8*"/>
-                <RowDefinition Height="50*"/>
-                <RowDefinition Height="8*"/>
-                <RowDefinition Height="19*"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="15"/>
+
+                <RowDefinition Height="95"/>
+                <RowDefinition Height="15"/>
+                <RowDefinition Height="95"/>
+                <RowDefinition Height="15"/>
+                <RowDefinition Height="150"/>
+                <RowDefinition Height="15"/>
+                <RowDefinition Height="90"/>
+                <RowDefinition Height="15"/>
+                <RowDefinition Height="90"/>
+
+                <RowDefinition Height="12"/>
+                <RowDefinition Height="40"/>
             </Grid.RowDefinitions>
             <Border Grid.Row="0" Margin="100 3 100 3" BorderBrush="{StaticResource ButtonBackground}" BorderThickness="1">
                 <TextBlock Style="{StaticResource SettingsText}" FontSize="18" TextAlignment="Center" VerticalAlignment="Center" Background="White" Text="Settings"/>
