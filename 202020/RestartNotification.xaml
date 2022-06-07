@@ -1,0 +1,21 @@
+﻿<Window x:Class="_202020.RestartNotification"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:properties="clr-namespace:_202020.Properties"
+        mc:Ignorable="d"
+        ResizeMode="CanMinimize"
+        SizeToContent="Height"
+        Icon="Media/Notification.ico"
+        Title="202020 Break" Height="150" Width="250">
+    <Grid Background="Black">
+        <TextBlock Name="RNotifMessage" 
+                   TextWrapping="Wrap" 
+                   FontSize="14"
+                   Text="Your computer just woke from sleep. Please restart 202020 and ensure it runs properly."
+                   Background="Black"
+                   Margin="5 2.5 5 2.5"
+                   Foreground="White"/>
+    </Grid>
+</Window>
