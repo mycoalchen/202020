@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type='text/xsl' href='C:\ProgramData\Windows App Certification Kit\results.xsl'?>
-<REPORT xml:lang="en-US" OVERALL_RESULT="PASS" VERSION="10.0.19041.685" LATEST_VERSION="TRUE" UPDATE_DOWNLOAD_URL="" TOOLSET_ARCHITECTURE="x64" SecureBoot="FALSE" APP_TYPE="Centennial" PUBLISHER_DISPLAY_NAME="CN=DDC0C21D-A155-41EB-9AE3-EB7012BDF7F1" APP_NAME="44686MichaelChen.202020" APP_VERSION="1.1.2.0" OSVERSION="10.0.19043.0" OS="Microsoft Windows 10 Home" PER_USER_APPLICATION="" PARTIAL_RUN="TRUE" LCID="1033" X64_ONLY="FALSE" VALIDATION_TYPE="UI" ReportGenerationTime="2/5/2022 12:52:50 AM" ID="080b07fcbadd1ea8208bad9ec7c314f7">
+<REPORT xml:lang="en-US" OVERALL_RESULT="PASS" VERSION="10.0.19041.685" LATEST_VERSION="TRUE" UPDATE_DOWNLOAD_URL="" TOOLSET_ARCHITECTURE="x64" SecureBoot="FALSE" APP_TYPE="Centennial" PUBLISHER_DISPLAY_NAME="CN=DDC0C21D-A155-41EB-9AE3-EB7012BDF7F1" APP_NAME="44686MichaelChen.202020" APP_VERSION="1.1.4.0" OSVERSION="10.0.19043.0" OS="Microsoft Windows 10 Home" PER_USER_APPLICATION="" PARTIAL_RUN="TRUE" LCID="1033" X64_ONLY="FALSE" VALIDATION_TYPE="UI" ReportGenerationTime="3/15/2022 4:32:32 PM" ID="433c1df7fb16f68b4c067604217bdf97">
   <REQUIREMENTS>
     <REQUIREMENT NUMBER="23" TITLE="App Capabilities test" RATIONALE="Packages declaring special-use capabilities will have to provide justifications during the onboarding process.">
-      <TEST INDEX="52" NAME="Special use capabilities" DESCRIPTION="Packages declaring special-use capabilities will have to provide justifications during the onboarding process." EXECUTIONTIME="00h:00m:01s.01ms" OPTIONAL="FALSE">
+      <TEST INDEX="52" NAME="Special use capabilities" DESCRIPTION="Packages declaring special-use capabilities will have to provide justifications during the onboarding process." EXECUTIONTIME="00h:00m:01s.24ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
@@ -11,12 +11,12 @@
   </REQUIREMENTS>
   <APPLICATIONS>
     <Installed_Programs>
-      <Program Name="44686MichaelChen.202020" Type="Application" Source="AppxPackage" Publisher="CN=DDC0C21D-A155-41EB-9AE3-EB7012BDF7F1" Version="1.1.2.0" Language="1033" InstallDate="" OSVersionAtInstallTime="10.0.0.19043" RootDirPath="C:\Windows\temp\appcert_2178\44686MichaelChen.202020_1.1.2.0_neutral__1xnyq3bbv8tvj" Id="0000768216c1a5b0cb1dd6acf6fc9a436a5500000904" HiddenArp="false">
+      <Program Name="44686MichaelChen.202020" Type="Application" Source="AppxPackage" Publisher="CN=DDC0C21D-A155-41EB-9AE3-EB7012BDF7F1" Version="1.1.4.0" Language="1033" InstallDate="" OSVersionAtInstallTime="10.0.0.19043" RootDirPath="C:\Windows\temp\appcert_0E78\44686MichaelChen.202020_1.1.4.0_neutral__1xnyq3bbv8tvj" Id="0000b053584863f6ffb473c0f4d5f9948bed00000904" HiddenArp="false">
         <Indicators>
           <WindowsStoreAppManifestIndicators>
-            <PackageManifest PackageFullName="44686MichaelChen.202020_1.1.2.0_neutral__1xnyq3bbv8tvj">
+            <PackageManifest PackageFullName="44686MichaelChen.202020_1.1.4.0_neutral__1xnyq3bbv8tvj">
               <Package>
-                <Identity Name="44686MichaelChen.202020" Publisher="CN=DDC0C21D-A155-41EB-9AE3-EB7012BDF7F1" Version="1.1.2.0" ProcessorArchitecture="neutral"></Identity>
+                <Identity Name="44686MichaelChen.202020" Publisher="CN=DDC0C21D-A155-41EB-9AE3-EB7012BDF7F1" Version="1.1.4.0" ProcessorArchitecture="neutral"></Identity>
                 <Properties>
                   <DisplayName>202020</DisplayName>
                   <PublisherDisplayName>Michael Chen</PublisherDisplayName>
@@ -52,9 +52,9 @@
             </PackageManifest>
             <BundleManifest PackageFamilyName="44686MichaelChen.202020_1xnyq3bbv8tvj">
               <Bundle SchemaVersion="4.0">
-                <Identity Name="44686MichaelChen.202020" Publisher="CN=DDC0C21D-A155-41EB-9AE3-EB7012BDF7F1" Version="1.1.2.0"></Identity>
+                <Identity Name="44686MichaelChen.202020" Publisher="CN=DDC0C21D-A155-41EB-9AE3-EB7012BDF7F1" Version="1.1.4.0"></Identity>
                 <Packages>
-                  <Package Type="application" Version="1.1.2.0" Architecture="neutral" FileName="202020 Installer_1.1.2.0_AnyCPU.appx" Offset="68" Size="1666298">
+                  <Package Type="application" Version="1.1.4.0" Architecture="neutral" FileName="202020 Installer_1.1.4.0_AnyCPU.appx" Offset="68" Size="1666276">
                     <Resources>
                       <Resource Language="EN-US"></Resource>
                       <Resource Scale="200"></Resource>
@@ -64,7 +64,7 @@
                       <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.17134.0" MaxVersionTested="10.0.18362.0"></TargetDeviceFamily>
                     </Dependencies>
                   </Package>
-                  <Package Type="resource" Version="1.1.2.0" ResourceId="split.scale-100" FileName="202020 Installer_1.1.2.0_scale-100.appx" Offset="1666461" Size="50909" Architecture="neutral">
+                  <Package Type="resource" Version="1.1.4.0" ResourceId="split.scale-100" FileName="202020 Installer_1.1.4.0_scale-100.appx" Offset="1666439" Size="50909" Architecture="neutral">
                     <Resources>
                       <Resource Scale="100"></Resource>
                     </Resources>
@@ -73,7 +73,7 @@
                       <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.17134.0" MaxVersionTested="10.0.18362.0"></TargetDeviceFamily>
                     </Dependencies>
                   </Package>
-                  <Package Type="resource" Version="1.1.2.0" ResourceId="split.scale-125" FileName="202020 Installer_1.1.2.0_scale-125.appx" Offset="1717465" Size="65511" Architecture="neutral">
+                  <Package Type="resource" Version="1.1.4.0" ResourceId="split.scale-125" FileName="202020 Installer_1.1.4.0_scale-125.appx" Offset="1717443" Size="65513" Architecture="neutral">
                     <Resources>
                       <Resource Scale="125"></Resource>
                     </Resources>
@@ -82,7 +82,7 @@
                       <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.17134.0" MaxVersionTested="10.0.18362.0"></TargetDeviceFamily>
                     </Dependencies>
                   </Package>
-                  <Package Type="resource" Version="1.1.2.0" ResourceId="split.scale-150" FileName="202020 Installer_1.1.2.0_scale-150.appx" Offset="1783071" Size="81396" Architecture="neutral">
+                  <Package Type="resource" Version="1.1.4.0" ResourceId="split.scale-150" FileName="202020 Installer_1.1.4.0_scale-150.appx" Offset="1783051" Size="81397" Architecture="neutral">
                     <Resources>
                       <Resource Scale="150"></Resource>
                     </Resources>
@@ -91,7 +91,7 @@
                       <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.17134.0" MaxVersionTested="10.0.18362.0"></TargetDeviceFamily>
                     </Dependencies>
                   </Package>
-                  <Package Type="resource" Version="1.1.2.0" ResourceId="split.scale-400" FileName="202020 Installer_1.1.2.0_scale-400.appx" Offset="1864562" Size="297794" Architecture="neutral">
+                  <Package Type="resource" Version="1.1.4.0" ResourceId="split.scale-400" FileName="202020 Installer_1.1.4.0_scale-400.appx" Offset="1864543" Size="297795" Architecture="neutral">
                     <Resources>
                       <Resource Scale="400"></Resource>
                     </Resources>
@@ -107,8 +107,8 @@
         </Indicators>
         <StaticProperties>
           <Files Id="">
-            <File Id="00008b364e8fc0efdcbd7d8b7301ad22dfa05be1d018" Name="202020.exe" ProductName="202020" CompanyName="" ProductVersion="1.0.0.0" VerLanguage="0" SwitchBackContext="0" FileVersion="1.0.0.0" Size="860160" SizeOfImage="860160" PeHeaderHash="0101823fd427c966235a2f29c8e806ddec16169dc7a2" PeChecksum="0" CrcChecksum="-1048446190" BinProductVersion="1.0.0.0" BinFileVersion="1.0.0.0" FileDescription="202020" LegalCopyright="copyright ©  2020" LinkDate="10/26/2059 23:34:52" BinaryType="pe32_clr_il_prefer32" LowerCaseLongPath="c:\windows\temp\appcert_2178\44686michaelchen.202020_1.1.2.0_neutral__1xnyq3bbv8tvj\202020\202020.exe" />
-            <File Id="00009d25ba200530efaef00cfb53d2ac609f95b13172" Name="resources.pri" ProductName="" CompanyName="" ProductVersion="" VerLanguage="0" SwitchBackContext="0" FileVersion="" Size="0" SizeOfImage="0" PeHeaderHash="" PeChecksum="0" CrcChecksum="1525009373" BinProductVersion="" BinFileVersion="" FileDescription="" LegalCopyright="" LinkDate="" BinaryType="data_only" LowerCaseLongPath="c:\windows\temp\appcert_2178\44686michaelchen.202020_1.1.2.0_neutral__1xnyq3bbv8tvj\resources.pri" />
+            <File Id="000009da5d446e864cc64a9af763cda79d4907f34eca" Name="202020.exe" ProductName="202020" CompanyName="" ProductVersion="1.0.0.0" VerLanguage="0" SwitchBackContext="0" FileVersion="1.0.0.0" Size="860160" SizeOfImage="860160" PeHeaderHash="0101272e21344c68fdd6d8cd1e44569f6742655778f9" PeChecksum="0" CrcChecksum="195661945" BinProductVersion="1.0.0.0" BinFileVersion="1.0.0.0" FileDescription="202020" LegalCopyright="copyright ©  2020" LinkDate="11/21/2040 09:41:21" BinaryType="pe32_clr_il_prefer32" LowerCaseLongPath="c:\windows\temp\appcert_0e78\44686michaelchen.202020_1.1.4.0_neutral__1xnyq3bbv8tvj\202020\202020.exe" />
+            <File Id="00009d25ba200530efaef00cfb53d2ac609f95b13172" Name="resources.pri" ProductName="" CompanyName="" ProductVersion="" VerLanguage="0" SwitchBackContext="0" FileVersion="" Size="0" SizeOfImage="0" PeHeaderHash="" PeChecksum="0" CrcChecksum="1525009373" BinProductVersion="" BinFileVersion="" FileDescription="" LegalCopyright="" LinkDate="" BinaryType="data_only" LowerCaseLongPath="c:\windows\temp\appcert_0e78\44686michaelchen.202020_1.1.4.0_neutral__1xnyq3bbv8tvj\resources.pri" />
           </Files>
         </StaticProperties>
       </Program>
