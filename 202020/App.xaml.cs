@@ -8,6 +8,8 @@ namespace _202020
     {
         public TimeSpan TimeBetweenBreaks;
         public TimeSpan BreakLength;
+        RestartNotification RNotifWin;
+
         private void Application_Startup(object sender, StartupEventArgs e)
         {
             Application.Current.Properties["SettingsOpen"] = false;
@@ -29,8 +31,11 @@ namespace _202020
                 case PowerModes.Resume:
                     if (true)
                     {
-                        System.Windows.Forms.Application.Restart();
-                        System.Windows.Application.Current.Shutdown();
+                        // System.Windows.Forms.Application.Restart();
+                        RNotifWin = new RestartNotification();
+                        RNotifWin.Show();
+                        RNotifWin.Activate();
+                        /// System.Windows.Application.Current.Shutdown();
                     }
                     break;
             }
