@@ -5,17 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:properties="clr-namespace:_202020.Properties"
         mc:Ignorable="d"
-        ResizeMode="CanMinimize"
         SizeToContent="Height"
         Icon="Media/Notification.ico"
         Title="202020 Break" Height="150" Width="250">
-    <Grid Background="Black">
+    <Grid Background="Black" VerticalAlignment="Stretch">
         <TextBlock Name="NotifMessage" 
                    TextWrapping="Wrap" 
-                   FontSize="14"
+                   FontSize="16"
                    Text="{Binding Source={x:Static properties:Settings.Default}, Path=NotificationText}"
                    Background="Black"
                    Margin="5 2.5 5 2.5"
-                   Foreground="White"/>
+                   Foreground="White"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   TextAlignment="Center"/>
     </Grid>
 </Window>

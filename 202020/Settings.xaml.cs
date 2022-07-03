@@ -90,7 +90,10 @@ namespace _202020
             Properties.Settings.Default.NotificationStartSound = (bool)StartSound.IsChecked;
             Properties.Settings.Default.NotificationStopSound = (bool)StopSound.IsChecked;
             Properties.Settings.Default.NotificationTextEnabled = (bool)NotificationTextEnabled.IsChecked;
+            Properties.Settings.Default.FullScreenNotifications = (bool)FullScreenNotifications.IsChecked;
+            Properties.Settings.Default.NotificationFocused = (bool)NotificationFocused.IsChecked;
             Properties.Settings.Default.NotificationText = NotificationTextMessage.Text;
+
             int _StartVolume, _StopVolume, _PlayPauseVolume;
             if (!int.TryParse(StartVolume.Text, out _StartVolume) || _StartVolume < 1 || _StartVolume > 100)
             {
@@ -158,6 +161,8 @@ namespace _202020
             StopVolume.Text = "50";
             PlayPauseSoundEnabled.IsChecked = true;
             PauseResumeVolume.Text = "50";
+            FullScreenNotifications.IsChecked = false;
+            NotificationFocused.IsChecked = true;
         }
         protected override void OnClosing(CancelEventArgs e)
         {

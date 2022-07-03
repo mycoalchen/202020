@@ -230,18 +230,6 @@ namespace _202020.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool NotificationFocused {
-            get {
-                return ((bool)(this["NotificationFocused"]));
-            }
-            set {
-                this["NotificationFocused"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
         public bool PlayPauseSound {
             get {
                 return ((bool)(this["PlayPauseSound"]));
@@ -272,6 +260,30 @@ namespace _202020.Properties {
             }
             set {
                 this["RunAtStartup"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool FullScreenNotifications {
+            get {
+                return ((bool)(this["FullScreenNotifications"]));
+            }
+            set {
+                this["FullScreenNotifications"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool NotificationFocused {
+            get {
+                return ((bool)(this["NotificationFocused"]));
+            }
+            set {
+                this["NotificationFocused"] = value;
             }
         }
     }
