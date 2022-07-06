@@ -58,7 +58,7 @@
     <ManifestCertificateThumbprint>C840F89198E420C985D38D190FF45B489BBBA55A</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <GenerateManifests>true</GenerateManifests>
+    <GenerateManifests>false</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
     <TargetZone>LocalIntranet</TargetZone>

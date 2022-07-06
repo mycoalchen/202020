@@ -309,7 +309,10 @@ namespace _202020
             {
                 NotifWin = new BreakNotification();
                 NotifWin.Show(); 
-                if (Properties.Settings.Default.NotificationFocused) { NotifWin.Activate(); }
+                if (Properties.Settings.Default.NotificationFocused) {
+                    // NotifWin.Activate();
+                    NotifWin.Topmost = true;
+                }
             }
             MainTimeToolTip.Text = "Time until break ends";
             OnBreak = true;
