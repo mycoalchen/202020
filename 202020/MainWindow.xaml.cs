@@ -22,6 +22,7 @@ namespace _202020
         MediaPlayer StartNotif, StopNotif;
         MediaPlayer PlayNotif, PauseNotif;
         BreakNotification NotifWin;
+        bool HasBeenMinimized = false; // Set to true after first minimized - fixes a bug where first minimize doesn't work
 
         Window w; // helper window used to hide from alt-tab menu
 
@@ -126,6 +127,7 @@ namespace _202020
             MainTimeToolTip.Text = "Time until next break";
             if (!Properties.Settings.Default.RunInTaskbar)
             {
+                ShowInTaskbar = false;
                 MinimizeToTray.Enable(this);
                 if (!Properties.Settings.Default.ShowInAltTab)
                 {
@@ -179,9 +181,23 @@ namespace _202020
             PauseNotif = new MediaPlayer();
             PauseNotif.Open(new Uri(Path.Combine(Path.GetTempPath(), "Pause.wav")));
 
+            StateChanged += OnWindowStateChanged;
         }
 
-        
+        private void OnWindowStateChanged(object sender, EventArgs e)
+        {
+            if (HasBeenMinimized || ShowInTaskbar == true) return;
+            switch (this.WindowState)
+            {
+                // Fixes bug where first minimization doesn't work
+                case WindowState.Minimized:
+                    WindowState = WindowState.Normal;
+                    HasBeenMinimized = true;
+                    WindowState = WindowState.Minimized;
+                    break;
+                default: break;
+            }
+        }
 
         private void NotifPlay(bool Start)
         {
